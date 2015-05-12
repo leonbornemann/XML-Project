@@ -8,5 +8,6 @@ public class HelloGit {
 	public static void main(String[] args) {
 		System.out.println("Hello git");
 		System.out.println("more output");
+		System.out.println("much more output");
 	}
 }
