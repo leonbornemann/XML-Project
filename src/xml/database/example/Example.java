@@ -25,7 +25,7 @@ public class Example {
 	 */
 	public static void main(String[] args) throws BaseXException {
 		context = new Context();
-		String exampleFilePath = "example xml files/";
+		String exampleFilePath = "resources/example xml files/";
 		String dbName = "DBExample";
 		//creating a new database from a file:
 		System.out.println("--------------------------Creating database, adding files and printing info-------------------------");
