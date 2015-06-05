@@ -27,15 +27,22 @@ public class DataExploration {
 	    System.out.println("--------------------------Executing querys-----------------------------"); 
 	    System.out.println("-----------------------------------------------------------------------");
 	    System.out.println();
-	    executeAndPrintResult("for $doc in collection('"+dbName+"') let $file-path := base-uri($doc) return doc($file-path)//language/text()");
-
+	    countLanguageOccurences(dbName);
+	    countExampleElements(dbName);
 	    // Closes database context
 	    context.close();
 	}
 	
-	static void executeAndPrintResult(final String query) throws BaseXException {
-	    String a = new XQuery(query).execute(context);
-	    String[] languages = a.split("\n|\r\n");
+	private static void countExampleElements(String dbName) throws BaseXException {
+		String query = "count(for $doc in collection('"+dbName+"') let $file-path := base-uri($doc) return doc($file-path)//example)";
+		System.out.println("Example Nodes Count:");
+		System.out.println(new XQuery(query).execute(context));
+	}
+
+	static void countLanguageOccurences(String dbName) throws BaseXException {
+		String query = "for $doc in collection('"+dbName+"') let $file-path := base-uri($doc) return doc($file-path)//language/text()";
+		String result = new XQuery(query).execute(context);
+	    String[] languages = result.split("\n|\r\n");
 	    Map<String,Integer> languageCount = new HashMap<>();
 	    for(int i =0;i<languages.length;i++){
 	    	if(languageCount.containsKey(languages[i])){
