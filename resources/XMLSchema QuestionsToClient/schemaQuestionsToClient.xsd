@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="DE">
+			Fragen-Schema fuer XML Projekt 2015
+			Copyright 2015 Alle Rechte vorbehalten.
+		</xsd:documentation>
+	</xsd:annotation>
+	
+	<xsd:element name="question" type="questionType"/>
+	
+	<xsd:complexType name="questionType">
+		<xsd:sequence>
+			<xsd:element name="sentence" type="sentenceType"/>
+			<xsd:element name="answers" type="answersType"/>
+			
+			<xsd:element name="officialLanguageOf" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="sentenceType">
+		<xsd:sequence>
+			<xsd:element name="original" type="xsd:string"/>
+			<xsd:element name="english" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="answersType">
+		<xsd:sequence>
+			<xsd:element name="correct" type="xsd:string"/>
+			<xsd:element name="wrong" type="xsd:string" minOccurs="3" maxOccurs="3"/>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>
