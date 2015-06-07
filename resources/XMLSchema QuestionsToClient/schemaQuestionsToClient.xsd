@@ -2,12 +2,12 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 	<xsd:annotation>
 		<xsd:documentation xml:lang="DE">
-			Fragen-Schema fuer XML Projekt 2015
-			Copyright 2015 Alle Rechte vorbehalten.
+			question-schema for XML-project 2015
+			Copyright 2015 all rights reserved.
 		</xsd:documentation>
 	</xsd:annotation>
 	
-	<xsd:element name="question" type="questionType"/>
+	<xsd:element name="languageExamples" type="questionType"/>
 	
 	<xsd:complexType name="questionType">
 		<xsd:sequence>
