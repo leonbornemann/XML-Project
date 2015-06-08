@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languageExamples xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="dataRepresentation.xsd">
+	<languageExample language="German">
+		<example>
+			<original>
+			Hallo
+			</original>
+			<translation>
+			Hello
+			</translation>
+		</example>
+		<example>
+			<original>
+			Baum
+			</original>
+			<translation>
+			Tree
+			</translation>
+		</example>
+	</languageExample>
+	
+<languageExample language="Finnish">
+		<example>
+			<original>
+			Mit&#228; kuuluu?
+			</original>
+			<translation>
+			How are you?
+			</translation>
+		</example>
+		<example>
+			<original>
+			puu
+			</original>
+			<translation>
+			Tree
+			</translation>
+		</example>
+	</languageExample>
+</languageExamples>
