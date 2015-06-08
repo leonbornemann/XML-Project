@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <languageExamples xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			xsi:noNamespaceSchemaLocation="schemaQuestionsToClient.xsd">
+			xsi:noNamespaceSchemaLocation="questionsToClient.xsd">
 	<!-- send all necessary information -->
 	<example>
 		<sentence>
