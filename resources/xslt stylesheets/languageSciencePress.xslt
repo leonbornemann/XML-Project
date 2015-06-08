@@ -8,13 +8,32 @@
 		
 		</xsl:template>
 		<xsl:template match="example">
-			<xsl:if test="source">
-				<sourcetext>
-					<xsl:value-of select="source/text()"/>
-				</sourcetext>
-			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="source/text()">
+					<sourcetext>
+						<xsl:value-of select="source/text()"/>
+					</sourcetext>
+				</xsl:when>
+				<xsl:when test="alignedwords/*">
+					<sourcetext> 
+						<xsl:for-each select="alignedwords/word">
+							<xsl:for-each select="morpheme">
+								<xsl:for-each select="block">
+									<xsl:if test="@type='src'">
+										<xsl:value-of select="text()"/>
+									</xsl:if>
+								</xsl:for-each>
+							</xsl:for-each>
+							<xsl:text>#x20;</xsl:text>
+						</xsl:for-each>
+					</sourcetext>
+				
+				</xsl:when>	
+			</xsl:choose>
 			<xsl:apply-templates/>
 		</xsl:template>
+		
+		
 		
 		<xsl:template match="text()|@*">
 		</xsl:template>

@@ -11,16 +11,20 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
-public class Example {
+public class LanguageSchiencePressTransformator {
 
 	public static void main(String[] args) throws TransformerException, IOException{
 		TransformerFactory fac = TransformerFactory.newInstance();
 		String xsltPath = "resources/xslt stylesheets/languageSciencePress.xslt";
 		Source source = new StreamSource(new File(xsltPath));
 		Transformer transformer = fac.newTransformer(source);
-		String xmlSrcPath = "resources/language science press data/handschuh.xml";
-		String xmlDstPath = "resources/example xml files/output1.xml";
-		StreamResult res = new StreamResult(new FileWriter(new File(xmlDstPath)));
-		transformer.transform(new StreamSource(new File(xmlSrcPath)), res);
+		String xmlSrcRootPath = "resources/language science press data/";
+		File srcRoot = new File(xmlSrcRootPath);
+		for(File srcFile : srcRoot.listFiles()){
+			String xmlSrcPath = srcFile.getAbsolutePath();
+			String xmlDstPath = "resources/example xslt output/"+srcFile.getName();
+			StreamResult res = new StreamResult(new FileWriter(new File(xmlDstPath)));
+			transformer.transform(new StreamSource(new File(xmlSrcPath)), res);
+		}
 	}
 }
