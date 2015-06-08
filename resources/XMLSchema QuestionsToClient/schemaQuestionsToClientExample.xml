@@ -2,34 +2,68 @@
 <languageExamples xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 			xsi:noNamespaceSchemaLocation="schemaQuestionsToClient.xsd">
 	<!-- send all necessary information -->
-	<sentence>
-		<original>
+	<example>
+		<sentence>
+			<original>
 			Peter wusch die Füße seines Sohns.
-		</original>
-		<english>
+			</original>
+			<english>
 			Paul washed his son’s feet.
-		</english>
-	</sentence>
-	<answers>
-		<correct>
+			</english>
+		</sentence>
+		<answers>
+			<correct>
 			German
-		</correct>
-		<wrong>
+			</correct>
+			<wrong>
 			English
-		</wrong>
-		<wrong>
+			</wrong>
+			<wrong>
 			Finnish
-		</wrong>
-		<wrong>
+			</wrong>
+			<wrong>
 			Polish
-		</wrong>
-	</answers>
-	
-	<!-- extra information -->
-	<officialLanguageOf>
+			</wrong>
+		</answers>
+
+		<!-- extra information -->
+		<officialLanguageOf>
 		Germany
-	</officialLanguageOf>
-	<officialLanguageOf>
+		</officialLanguageOf>
+		<officialLanguageOf>
 		Liechtenstein
-	</officialLanguageOf>
+		</officialLanguageOf>
+	</example>
+	<example>
+		<sentence>
+			<original>
+			Peter wusch die Füße seines Sohns.
+			</original>
+			<english>
+			Paul washed his son’s feet.
+			</english>
+		</sentence>
+		<answers>
+			<correct>
+			German
+			</correct>
+			<wrong>
+			English
+			</wrong>
+			<wrong>
+			Finnish
+			</wrong>
+			<wrong>
+			Polish
+			</wrong>
+		</answers>
+
+		<!-- extra information -->
+		<officialLanguageOf>
+		Germany
+		</officialLanguageOf>
+		<officialLanguageOf>
+		Liechtenstein
+		</officialLanguageOf>
+	</example>
 </languageExamples>
