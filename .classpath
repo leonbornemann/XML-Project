@@ -7,5 +7,7 @@
 	<classpathentry kind="lib" path="lib/xalan xslt/xalan.jar"/>
 	<classpathentry kind="lib" path="lib/xalan xslt/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="lib/xalan xslt/xml-apis.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
