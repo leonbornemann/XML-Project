@@ -8,6 +8,13 @@
 		
 		</xsl:template>
 		<xsl:template match="example">
+			
+			<xsl:if test="language">
+			  <language>
+			  	<xsl:value-of select="language/text()"/>
+			  </language>
+			</xsl:if> 
+			
 			<xsl:choose>
 				<xsl:when test="source/text()">
 					<sourcetext>
@@ -27,7 +34,6 @@
 							<xsl:text>#x20;</xsl:text>
 						</xsl:for-each>
 					</sourcetext>
-				
 				</xsl:when>	
 			</xsl:choose>
 			<xsl:apply-templates/>
