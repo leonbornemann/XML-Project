@@ -6,11 +6,11 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 
-// http://localhost/RestTest/quiz/hello/question
+// http://localhost:8080/XML-Project/quiz/hello/question
 @Path("/hello")
 public class Hello {
 
-  // This method is called if XML is request
+  // This method is called if XML is requesting
   @GET
   @Path("question")
   public String sayXMLHello() {
@@ -18,13 +18,13 @@ public class Hello {
     		+ "<sentence>Bla Bla Blu</sentence> <translation>Bli Bli Ble</translation></block>";
   }
 
-  // This method is called if HTML is request
+  // This method is called if HTML is requesting
   @GET
   @Produces(MediaType.TEXT_XML)
   @Path("welcome")
   public String sayWelcomeGeek() {
     return "<html> " + "<title>" + "Hello Jersey" + "</title>"
-        + "<body><h1>" + "Hello Geek" + "</body></h1>" + "</html> ";
+        + "<body><h1>" + "Hello Geek" + "</h1></body>" + "</html> ";
   }
 
 } 
