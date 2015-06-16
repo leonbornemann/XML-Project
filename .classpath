@@ -9,5 +9,26 @@
 	<classpathentry kind="lib" path="lib/xalan xslt/xml-apis.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="lib/apache jena/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/commons-csv-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/httpclient-4.2.6.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/httpclient-cache-4.2.6.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/httpcore-4.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jackson-annotations-2.3.0.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jackson-core-2.3.3.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jackson-databind-2.3.3.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jcl-over-slf4j-1.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jena-arq-2.13.0.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jena-core-2.13.0.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jena-iri-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jena-tdb-1.1.2.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/jsonld-java-0.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/libthrift-0.9.2.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/slf4j-api-1.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/slf4j-log4j12-1.7.6.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="lib/apache jena/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
