@@ -1,7 +1,9 @@
 package data_exploration;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import org.basex.core.BaseXException;
 import org.basex.core.Context;
@@ -39,7 +41,7 @@ public class DataExploration {
 		System.out.println(new XQuery(query).execute(context));
 	}
 
-	static void countLanguageOccurences(String dbName) throws BaseXException {
+	 static Set<String> countLanguageOccurences(String dbName) throws BaseXException {
 		String query = "for $doc in collection('"+dbName+"') let $file-path := base-uri($doc) return doc($file-path)//language/text()";
 		String result = new XQuery(query).execute(context);
 	    String[] languages = result.split("\n|\r\n");
@@ -56,5 +58,20 @@ public class DataExploration {
 				System.out.println(language + " - " + languageCount.get(language));
 			}
 		}
+		return languageCount.keySet();
 	}
+	
+	public static Set<String> getLanguages (String dbName) throws BaseXException {
+		String query = "for $doc in collection('"+dbName+"') let $file-path := base-uri($doc) return doc($file-path)//language/text()";
+		context = new Context();
+		String result = new XQuery(query).execute(context);
+	    String[] languages = result.split("\n|\r\n");
+	    Set<String> languageSet = new HashSet<String>();
+	    for(int i =0;i<languages.length;i++){
+	    	languageSet.add(languages[i]);
+	    }
+		
+		return languageSet;
+	}
+	
 }
