@@ -3,10 +3,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/basex xml database/BaseX811.jar"/>
-	<classpathentry kind="lib" path="lib/xalan xslt/serializer.jar"/>
-	<classpathentry kind="lib" path="lib/xalan xslt/xalan.jar"/>
-	<classpathentry kind="lib" path="lib/xalan xslt/xercesImpl.jar"/>
-	<classpathentry kind="lib" path="lib/xalan xslt/xml-apis.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="lib/apache jena/commons-codec-1.6.jar"/>
@@ -30,5 +26,6 @@
 	<classpathentry kind="lib" path="lib/apache jena/slf4j-log4j12-1.7.6.jar"/>
 	<classpathentry kind="lib" path="lib/apache jena/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="lib/apache jena/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="lib/saxon/saxon9he.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

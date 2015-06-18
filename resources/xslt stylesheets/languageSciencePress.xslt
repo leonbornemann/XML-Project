@@ -14,6 +14,7 @@
 				  	<xsl:attribute name="language">
     					<xsl:value-of select="language/text()"/>
     				</xsl:attribute>
+    				<xsl:apply-templates select="child::alignedwords"/>
 				  	<xsl:apply-templates select="following-sibling::examples"/>
 				  	<xsl:apply-templates select="following-sibling::examples"/>
 				  </languageExample>
