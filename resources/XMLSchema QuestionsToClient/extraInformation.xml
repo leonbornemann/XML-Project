@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extraInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:noNamespaceSchemaLocation="extraInformation.xsd">
+	<language language="Finnish">
+		<spokenIn>
+			<country>Finland</country>
+			<long>24</long>
+			<lat>60</lat>
+		</spokenIn>
+		<spokenIn>
+			<country>Norway</country>
+			<long>10</long>
+			<lat>59</lat>
+		</spokenIn>
+		<spokenIn>
+			<country>Russia</country>
+			<long>37</long>
+			<lat>55</lat>
+		</spokenIn>
+		<spokenIn>
+			<country>Sweden</country>
+			<long>18</long>
+			<lat>59</lat>
+		</spokenIn>
+		<spokenIn>
+			<country>Estonia</country>
+			<long>24</long>
+			<lat>59</lat>
+		</spokenIn>
+	</language>
+</extraInformation>
