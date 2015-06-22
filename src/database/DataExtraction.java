@@ -34,8 +34,7 @@ public class DataExtraction {
 		System.out.println(getRandomLanguageName());
 
 		// create DBpedia Database Example
-		getDBpediaLanguages();
-
+		DBPediaDatabase.INSTANCE.getDBpediaLanguages();
 	}
 
 	public static List<String> getAllLanguageNames() throws BaseXException {
@@ -47,7 +46,7 @@ public class DataExtraction {
 				+ dbName
 				+ "') let $file-path := base-uri($doc) return doc($file-path)//languageExamples/languageExample/@language/string())";
 		List<String> output = Arrays
-				.asList((new XQuery(query).execute(context)).split("\n"));
+				.asList((new XQuery(query).execute(context)).split("\n|\r\n"));
 		// Closes database context
 		context.close();
 		return (output);
@@ -209,25 +208,4 @@ public class DataExtraction {
 		return languageContentObject;
 
 	}
-
-	/**
-	 * this methods creates an XML Database for the DBpedia enriched data and
-	 * returns all languages as an examplary use case
-	 * 
-	 * @return List of languages
-	 * @throws BaseXException
-	 */
-	public static List<String> getDBpediaLanguages() throws BaseXException {
-		context = new Context();
-		new CreateDB("DBpediaDB", "resources/xml-database/extraInformation.xml")
-				.execute(context);
-
-		String query = "distinct-values(for $doc in collection('DBpediaDB') let $file-path := base-uri($doc) return doc($file-path)//extraInformation/language/@language/string())";
-		List<String> output = Arrays
-				.asList((new XQuery(query).execute(context)).split("\n"));
-		// Closes database context
-		context.close();
-		return output;
-	}
-
 }
