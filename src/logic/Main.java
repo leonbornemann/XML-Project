@@ -15,7 +15,7 @@ public class Main {
 	
 	public static void main(String[] args) throws BaseXException, UnknownLanguageException{
 		QuestionGenerator gen = new QuestionGenerator();
-		Collection<QuestionData> questions = gen.getDistinctQuestions(10);
+		Collection<Question> questions = gen.getDistinctQuestions(10);
 		questions.forEach(e -> {e.printQuestion(); System.out.println("-----------------------------");});
 		//DataExtraction.getExtraInfoFromDBPedia("Mangarayi");
 	}

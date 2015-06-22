@@ -13,24 +13,36 @@ import database.DataExtraction;
 import database.LanguageContent;
 import database.exceptions.UnknownLanguageException;
 
+/***
+ * The main class in the logic. Its methods generate questions from the data found in the databases.
+ * The generation of Questions is very basic for now.
+ * @author LeonBornemann
+ *
+ */
 public class QuestionGenerator {
 
-	public QuestionData getNewQuestion() throws BaseXException, UnknownLanguageException{
+	/***
+	 * Randomly Generates a new Question.
+	 * @return A new Question
+	 * @throws BaseXException
+	 * @throws UnknownLanguageException
+	 */
+	public Question getNewQuestion() throws BaseXException, UnknownLanguageException{
 		String languageName = DataExtraction.getRandomLanguageName();
 		return buildQuestionData(languageName);
 	}
 
-	private QuestionData buildQuestionData(String languageName) throws UnknownLanguageException {
+	private Question buildQuestionData(String languageName) throws UnknownLanguageException {
 		LanguageContent languageContent;
 		try {
 			languageContent = DataExtraction.getLanguage(languageName);
 			//extra info is not yet used
-			ExtraInfo info = DBPediaDatabase.INSTANCE.getExtraInfoFromDBPedia(languageName);
+			DBPediaLanguageInfo info = DBPediaDatabase.INSTANCE.getExtraInfoFromDBPedia(languageName);
 			List<String> answers = getOtherLanguages(languageName);
 			answers.add(languageName);
 			Collections.shuffle(answers);
 			int correctAnswerIndex = answers.indexOf(languageName);
-			return new QuestionData("The sentence \""+ languageContent.getRandomExample().getOriginal() + "\" is in which language?", answers, correctAnswerIndex);
+			return new Question("The sentence \""+ languageContent.getRandomExample().getOriginal() + "\" is in which language?", answers, correctAnswerIndex);
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -46,10 +58,17 @@ public class QuestionGenerator {
 		return allLanguageNames.subList(0, 3);
 	}
 
-	public Collection<QuestionData> getDistinctQuestions(int count) throws BaseXException, UnknownLanguageException{
+	/***
+	 * Returns randomly generated, but distinct questions
+	 * @param count the number of questions to be generated
+	 * @return A collection of Questions
+	 * @throws BaseXException
+	 * @throws UnknownLanguageException
+	 */
+	public Collection<Question> getDistinctQuestions(int count) throws BaseXException, UnknownLanguageException{
 		List<String> allLanguageNames = DataExtraction.getAllLanguageNames();
 		Collections.shuffle(allLanguageNames);
-		List<QuestionData> questionData = new ArrayList<>(count);
+		List<Question> questionData = new ArrayList<>(count);
 		for(String languageName : allLanguageNames.subList(0, count)){
 			questionData.add(buildQuestionData(languageName));
 		}

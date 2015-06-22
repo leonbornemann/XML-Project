@@ -2,12 +2,17 @@ package logic;
 
 import java.util.List;
 
-public class ExtraInfo {
+/***
+ * Straightforward data class to caontain infos from the DBPedia-database
+ * @author LeonBornemann
+ *
+ */
+public class DBPediaLanguageInfo {
 
 	private String languageName;
 	private List<Country> spokenIn;
 	
-	public ExtraInfo(String languageName, List<Country> spokenIn) {
+	public DBPediaLanguageInfo(String languageName, List<Country> spokenIn) {
 		super();
 		this.languageName = languageName;
 		this.spokenIn = spokenIn;

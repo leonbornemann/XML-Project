@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import logic.Country;
-import logic.ExtraInfo;
+import logic.DBPediaLanguageInfo;
 
 import org.basex.core.BaseXException;
 import org.basex.core.Context;
@@ -14,6 +14,11 @@ import org.basex.core.cmd.XQuery;
 
 import database.exceptions.UnknownLanguageException;
 
+/***
+ * Class using the Singleton pattern to grant all classes access to the same Database-Object
+ * @author LeonBornemann
+ *
+ */
 public class DBPediaDatabase {
 
 	public static final DBPediaDatabase INSTANCE = new DBPediaDatabase();
@@ -30,7 +35,14 @@ public class DBPediaDatabase {
 		}
 	}
 	
-	public ExtraInfo getExtraInfoFromDBPedia(String languageName) throws BaseXException, UnknownLanguageException {
+	/***
+	 * Extracts all Information for the {@code languageName} out of the DBPedia-database and returns it in an Object.
+	 * @param languageName
+	 * @return
+	 * @throws BaseXException
+	 * @throws UnknownLanguageException
+	 */
+	public DBPediaLanguageInfo getExtraInfoFromDBPedia(String languageName) throws BaseXException, UnknownLanguageException {
 		if(!getDBpediaLanguages().contains(languageName)){
 			throw new UnknownLanguageException(languageName + " not found in DBPedia database");
 		}
@@ -49,11 +61,11 @@ public class DBPediaDatabase {
 			Double lattitude = Double.parseDouble(lattitudes.get(i).substring(0, lattitudes.get(i).indexOf('^')));
 			countries.add(new Country(countryName, longitude, lattitude));
 		}
-		return new ExtraInfo(languageName, countries );
+		return new DBPediaLanguageInfo(languageName, countries );
 	}
 	
 	/**
-	 * this methods returns all languages contained in the DBPedia database
+	 * This methods returns all languages contained in the DBPedia database
 	 * 
 	 * @return List of languages
 	 * @throws BaseXException

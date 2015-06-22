@@ -3,13 +3,24 @@ package logic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class QuestionData {
+/***
+ * This class contains all data and functionality needed for questions and their processing
+ * @author LeonBornemann
+ *
+ */
+public class Question {
 
 	private String questionText;
 	private List<String> answers;
 	private int correctAnswerIndex;
 
-	public QuestionData(String questionText,List<String> answers,int correctAnswerIndex){
+	/***
+	 * 
+	 * @param questionText The text to be printed to the user
+	 * @param answers A List of answers to be presented to the user
+	 * @param correctAnswerIndex the index of the correct answer in {@code answers}
+	 */
+	public Question(String questionText,List<String> answers,int correctAnswerIndex){
 		this.questionText = questionText;
 		this.answers=answers;
 		this.correctAnswerIndex=correctAnswerIndex;

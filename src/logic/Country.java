@@ -6,6 +6,11 @@ public class Country {
 	private double longitude;
 	private double lattitude;
 	
+	/***
+	 * Straightforward data class to caontain infos from the DBPedia-database
+	 * @author LeonBornemann
+	 *
+	 */
 	public Country(String name, double longitude, double lattitude) {
 		super();
 		this.name = name;
