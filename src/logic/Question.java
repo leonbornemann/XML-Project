@@ -40,7 +40,7 @@ public class Question {
 		return wrongAnswers;
 	}
 
-	private String getRightAnswer() {
+	public String getRightAnswer() {
 		return answers.get(correctAnswerIndex);
 	}
 

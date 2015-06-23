@@ -37,7 +37,7 @@ public class QuestionGenerator {
 		try {
 			languageContent = DataExtraction.getLanguage(languageName);
 			//extra info is not yet used
-			DBPediaLanguageInfo info = DBPediaDatabase.INSTANCE.getExtraInfoFromDBPedia(languageName);
+			//DBPediaLanguageInfo info = DBPediaDatabase.INSTANCE.getExtraInfoFromDBPedia(languageName);
 			List<String> answers = getOtherLanguages(languageName);
 			answers.add(languageName);
 			Collections.shuffle(answers);
@@ -73,5 +73,9 @@ public class QuestionGenerator {
 			questionData.add(buildQuestionData(languageName));
 		}
 		return questionData;
+	}
+
+	public Question getQuestion(String languageName) throws UnknownLanguageException {
+		return buildQuestionData(languageName);
 	}
 }
