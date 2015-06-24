@@ -73,7 +73,7 @@ public class DBPediaDatabase {
 	public List<String> getDBpediaLanguages() throws BaseXException {
 		String query = "distinct-values(for $doc in collection('DBpediaDB') let $file-path := base-uri($doc) return doc($file-path)//extraInformation/language/@language/string())";
 		List<String> output = Arrays
-				.asList((new XQuery(query).execute(context)).split("\n"));
+				.asList((new XQuery(query).execute(context)).split("\n|\r\n"));
 		// Closes database context
 		context.close();
 		return output;

@@ -3,7 +3,7 @@ package logic;
 import java.util.List;
 
 /***
- * Straightforward data class to caontain infos from the DBPedia-database
+ * Straightforward data class to contain infos from the DBPedia-database
  * @author LeonBornemann
  *
  */

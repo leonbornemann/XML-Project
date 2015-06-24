@@ -34,7 +34,7 @@ public class LanguageSchiencePressTransformator {
 	public void transform(File inputDir, File outputDir) throws TransformerException, IOException{
 		//String xsltPath = "resources/xslt stylesheets/languageSciencePress.xslt";
 		String xsltPath = "resources/xslt stylesheets/languageSciencePress.xslt";
-		File tempDir = new File("resources"+File.separator+"example xslt output");
+		File tempDir = new File("resources"+File.separator+"temp");
 		applyTransformation(inputDir, tempDir, xsltPath);
 		//apply the cleanup:
 		String xsltCleanupPath = "resources/xslt stylesheets/languageSciencePress cleanup.xslt";

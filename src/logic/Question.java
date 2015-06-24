@@ -10,28 +10,47 @@ import java.util.List;
  */
 public class Question {
 
-	private String questionText;
 	private List<String> answers;
 	private int correctAnswerIndex;
+	private DBPediaLanguageInfo languageInfo;
+	private String original;
+	private String translation;
 
 	/***
 	 * 
-	 * @param questionText The text to be printed to the user
+	 * @param original The sentence in the foreign language
+	 * @param translation The english translation
 	 * @param answers A List of answers to be presented to the user
 	 * @param correctAnswerIndex the index of the correct answer in {@code answers}
+	 * @param languageInfo All Information concerning the language, that this question is about. Note: languageInfo.getLanguageName() should return the same string as this.getRightAnswer()
 	 */
-	public Question(String questionText,List<String> answers,int correctAnswerIndex){
-		this.questionText = questionText;
+	public Question(String original,String translation,List<String> answers,int correctAnswerIndex,DBPediaLanguageInfo languageInfo){
+		this.original = original;
+		this.translation = translation;
 		this.answers=answers;
 		this.correctAnswerIndex=correctAnswerIndex;
+		this.languageInfo = languageInfo;
+		assert(languageInfo.getLanguageName().equals(getRightAnswer()));
 	}
 	
 	public String getQuestionText() {
-		return questionText;
+		return "The sentence \""+ original + "\" is in which language?";
+	}
+	
+	public String getOriginal() {
+		return original;
+	}
+
+	public String getTranslation() {
+		return translation;
 	}
 
 	public List<String> getAllAnswers() {
 		return new ArrayList<String>(answers);
+	}
+	
+	public DBPediaLanguageInfo getLanguageInfo(){
+		return languageInfo;
 	}
 	
 	public List<String> getWrongAnswers(){
@@ -45,7 +64,7 @@ public class Question {
 	}
 
 	public void printQuestion() {
-		System.out.println(questionText);
+		System.out.println(getQuestionText());
 		System.out.println("possibleAnswers: ");
 		for(int i=0;i<answers.size();i++){
 			String toPrint = i+") " + answers.get(i);

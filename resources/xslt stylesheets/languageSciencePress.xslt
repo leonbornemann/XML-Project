@@ -12,7 +12,7 @@
 				<xsl:when test="language">
 				  <languageExample>
 				  	<xsl:attribute name="language">
-    					<xsl:value-of select="language/text()"/>
+    					<xsl:value-of select="normalize-space(language/text())"/>
     				</xsl:attribute>
     				<xsl:apply-templates select="child::alignedwords"/>
 				  	<xsl:apply-templates select="following-sibling::examples"/>
@@ -52,12 +52,12 @@
 		
 		<xsl:template match="word" mode = "translation">
 			<xsl:apply-templates mode = "translation"/>
-			<xsl:text>#x20;</xsl:text>
+			<xsl:text>&#x20;</xsl:text>
 		</xsl:template>
 		
 		<xsl:template match="word" mode = "original">
 			<xsl:apply-templates mode = "original"/>
-			<xsl:text>#x20;</xsl:text>
+			<xsl:text>&#x20;</xsl:text>
 		</xsl:template>
 		
 		<xsl:template match="block" mode = "original">

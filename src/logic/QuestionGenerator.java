@@ -10,6 +10,7 @@ import org.basex.core.BaseXException;
 
 import database.DBPediaDatabase;
 import database.DataExtraction;
+import database.Example;
 import database.LanguageContent;
 import database.exceptions.UnknownLanguageException;
 
@@ -37,12 +38,15 @@ public class QuestionGenerator {
 		try {
 			languageContent = DataExtraction.getLanguage(languageName);
 			//extra info is not yet used
-			//DBPediaLanguageInfo info = DBPediaDatabase.INSTANCE.getExtraInfoFromDBPedia(languageName);
+			DBPediaLanguageInfo info = DBPediaDatabase.INSTANCE.getExtraInfoFromDBPedia(languageName);
 			List<String> answers = getOtherLanguages(languageName);
 			answers.add(languageName);
 			Collections.shuffle(answers);
 			int correctAnswerIndex = answers.indexOf(languageName);
-			return new Question("The sentence \""+ languageContent.getRandomExample().getOriginal() + "\" is in which language?", answers, correctAnswerIndex);
+			Example example = languageContent.getRandomExample();
+			String original = example.getOriginal();
+			String translation = example.getTranslation();
+			return new Question(original, translation, answers, correctAnswerIndex, info);
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
