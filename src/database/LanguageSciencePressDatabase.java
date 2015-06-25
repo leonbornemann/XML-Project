@@ -12,55 +12,59 @@ import org.basex.core.cmd.Add;
 import org.basex.core.cmd.CreateDB;
 import org.basex.core.cmd.XQuery;
 
-public class DataExtraction {
+import data_representation.Example;
+import data_representation.LanguageContent;
 
-	private static Context context;
+public class LanguageSciencePressDatabase {
 
-	private static String dbName = "DBExample";
+	public static LanguageSciencePressDatabase INSTANCE = new LanguageSciencePressDatabase();
+	
+	private Context context;
+	private final String dbName = "DBExample";
+	private String dbFilepath = "resources/languageSciencePress-database/";
 
-	private static String exampleFilePath = "resources/xml-database/";
-
+	public LanguageSciencePressDatabase(){
+		this.context = new Context();
+		try {
+			new CreateDB(dbName).execute(context);
+			new Add("", dbFilepath).execute(context);
+		} catch (BaseXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			throw new AssertionError("Failed to load database due to BaseXException in class " + LanguageSciencePressDatabase.class.getName());
+		}
+	}
+	
 	// for testing
 	public static void main(String[] args) throws BaseXException {
 
-		List<LanguageContent> languageContentList = getAllLanguages();
+		List<LanguageContent> languageContentList = LanguageSciencePressDatabase.INSTANCE.getAllLanguages();
 		System.out.println(languageContentList.get(1).getLanguageName());
 		System.out.println(languageContentList.get(1).getRandomExample()
 				.getOriginal());
-		LanguageContent exampleLanguageContent = getRandomLanguage();
+		LanguageContent exampleLanguageContent = LanguageSciencePressDatabase.INSTANCE.getRandomLanguage();
 		System.out.println(exampleLanguageContent.getLanguageName());
 		System.out.println(exampleLanguageContent.getRandomExample()
 				.getTranslation());
-		System.out.println(getRandomLanguageName());
+		System.out.println(LanguageSciencePressDatabase.INSTANCE.getRandomLanguageName());
 
 		// create DBpedia Database Example
 		DBPediaDatabase.INSTANCE.getDBpediaLanguages();
 	}
 
-	public static List<String> getAllLanguageNames() throws BaseXException {
-		context = new Context();
-		new CreateDB(dbName).execute(context);
-		new Add("", exampleFilePath).execute(context);
-
+	public List<String> getAllLanguageNames() throws BaseXException {
 		String query = "distinct-values(for $doc in collection('"
 				+ dbName
 				+ "') let $file-path := base-uri($doc) return doc($file-path)//languageExamples/languageExample/@language/string())";
 		List<String> output = Arrays
 				.asList((new XQuery(query).execute(context)).split("\n|\r\n"));
-		// Closes database context
-		context.close();
 		return (output);
 
 	}
 
-	public static List<LanguageContent> getAllLanguages() throws BaseXException {
+	public List<LanguageContent> getAllLanguages() throws BaseXException {
 		// get List with all language names to iterate through
 		List<String> languageList = getAllLanguageNames();
-
-		context = new Context();
-		new CreateDB(dbName).execute(context);
-		new Add("", exampleFilePath).execute(context);
-
 		List<LanguageContent> languageContentObjects = new ArrayList<LanguageContent>(
 				Collections.emptyList());
 		for (String element : languageList) {
@@ -122,13 +126,11 @@ public class DataExtraction {
 
 		}
 		// Closes database context
-		context.close();
-
 		return languageContentObjects;
 	}
 
 	// calling all language names and choosing one random
-	public static String getRandomLanguageName() throws BaseXException {
+	public String getRandomLanguageName() throws BaseXException {
 		List<String> languageNames = getAllLanguageNames();
 		Random rnd = new Random();
 		int randomRange = languageNames.size();
@@ -137,7 +139,7 @@ public class DataExtraction {
 	}
 
 	// calling all language contents and choosing one random
-	public static LanguageContent getRandomLanguage() throws BaseXException {
+	public LanguageContent getRandomLanguage() throws BaseXException {
 		List<LanguageContent> languageNames = getAllLanguages();
 		Random rnd = new Random();
 		int randomRange = languageNames.size();
@@ -146,12 +148,8 @@ public class DataExtraction {
 
 	}
 
-	public static LanguageContent getLanguage(String languageName)
+	public LanguageContent getLanguage(String languageName)
 			throws BaseXException {
-		context = new Context();
-		new CreateDB(dbName).execute(context);
-		new Add("", exampleFilePath).execute(context);
-
 		LanguageContent languageContentObject = new LanguageContent();
 		languageContentObject.setLanguageName(languageName);
 
@@ -202,7 +200,6 @@ public class DataExtraction {
 		}
 
 		// Closes database context
-		context.close();
 
 		languageContentObject.setExaples(examples);
 		return languageContentObject;

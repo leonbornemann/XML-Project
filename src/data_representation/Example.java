@@ -1,4 +1,4 @@
-package database;
+package data_representation;
 
 public class Example {
 	

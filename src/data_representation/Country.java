@@ -1,4 +1,4 @@
-package logic;
+package data_representation;
 
 public class Country {
 

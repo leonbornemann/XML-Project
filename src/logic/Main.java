@@ -9,7 +9,7 @@ import java.util.Set;
 import org.basex.core.BaseXException;
 
 import database.DBPediaDatabase;
-import database.DataExtraction;
+import database.LanguageSciencePressDatabase;
 import database.exceptions.UnknownLanguageException;
 
 /***
@@ -20,6 +20,7 @@ import database.exceptions.UnknownLanguageException;
 public class Main {
 	
 	public static void main(String[] args) throws BaseXException, UnknownLanguageException{
+		//DBPediaDatabase.INSTANCE.test();
 		//throws exceptions!
 		/*QuestionGenerator gen = new QuestionGenerator();
 		Collection<Question> questions = gen.getDistinctQuestions(2);*/
@@ -28,7 +29,7 @@ public class Main {
 		questions.forEach(e -> {e.printQuestion(); System.out.println("-----------------------------");});
 		//DataExtraction.getExtraInfoFromDBPedia("Mangarayi");
 		//Get all Languages present in both databases:
-		Set<String> languageSciencePress = cleanup(DataExtraction.getAllLanguageNames());
+		Set<String> languageSciencePress = cleanup(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames());
 		Set<String> dbPedia = cleanup(DBPediaDatabase.INSTANCE.getDBpediaLanguages());
 		Set<String> languagesInBoth = new HashSet<>(languageSciencePress);
 		languagesInBoth.retainAll(dbPedia);
@@ -36,7 +37,7 @@ public class Main {
 		System.out.println("languages in language Science press count: " + languageSciencePress.size());
 		System.out.println("languages in dbpedia count: " + dbPedia.size());
 		System.out.println("valid languages count(after name cleanup): " + languagesInBoth.size());
-		System.out.println(DataExtraction.getAllLanguageNames().size());
+		System.out.println(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames().size());
 		//languagesInBoth.forEach(e -> System.out.println(e));
 		//note:
 	}

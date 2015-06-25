@@ -1,4 +1,4 @@
-package database;
+package data_representation;
 
 import java.util.List;
 import java.util.Random;

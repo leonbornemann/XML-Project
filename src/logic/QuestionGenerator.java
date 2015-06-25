@@ -8,10 +8,11 @@ import java.util.List;
 
 import org.basex.core.BaseXException;
 
+import data_representation.DBPediaLanguageInfo;
+import data_representation.Example;
+import data_representation.LanguageContent;
 import database.DBPediaDatabase;
-import database.DataExtraction;
-import database.Example;
-import database.LanguageContent;
+import database.LanguageSciencePressDatabase;
 import database.exceptions.UnknownLanguageException;
 
 /***
@@ -29,14 +30,14 @@ public class QuestionGenerator {
 	 * @throws UnknownLanguageException
 	 */
 	public Question getNewQuestion() throws BaseXException, UnknownLanguageException{
-		String languageName = DataExtraction.getRandomLanguageName();
+		String languageName = LanguageSciencePressDatabase.INSTANCE.getRandomLanguageName();
 		return buildQuestionData(languageName);
 	}
 
 	private Question buildQuestionData(String languageName) throws UnknownLanguageException {
 		LanguageContent languageContent;
 		try {
-			languageContent = DataExtraction.getLanguage(languageName);
+			languageContent = LanguageSciencePressDatabase.INSTANCE.getLanguage(languageName);
 			//extra info is not yet used
 			DBPediaLanguageInfo info = DBPediaDatabase.INSTANCE.getExtraInfoFromDBPedia(languageName);
 			List<String> answers = getOtherLanguages(languageName);
@@ -56,7 +57,7 @@ public class QuestionGenerator {
 	}
 	
 	private List<String> getOtherLanguages(String languageName) throws BaseXException {
-		List<String> allLanguageNames = new ArrayList<>(DataExtraction.getAllLanguageNames());
+		List<String> allLanguageNames = new ArrayList<>(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames());
 		allLanguageNames.remove(languageName);
 		Collections.shuffle(allLanguageNames);
 		return allLanguageNames.subList(0, 3);
@@ -70,7 +71,7 @@ public class QuestionGenerator {
 	 * @throws UnknownLanguageException
 	 */
 	public Collection<Question> getDistinctQuestions(int count) throws BaseXException, UnknownLanguageException{
-		List<String> allLanguageNames = DataExtraction.getAllLanguageNames();
+		List<String> allLanguageNames = LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames();
 		Collections.shuffle(allLanguageNames);
 		List<Question> questionData = new ArrayList<>(count);
 		for(String languageName : allLanguageNames.subList(0, count)){

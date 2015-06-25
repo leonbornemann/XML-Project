@@ -58,8 +58,8 @@ public class LanguageSchiencePressTransformator {
 	public static void main(String[] args) throws TransformerException, IOException{
 		LanguageSchiencePressTransformator transformer = new LanguageSchiencePressTransformator();
 		//File inputDir = new File("resources"+File.separator+"language science press data");
-		File inputDir = new File("resources"+File.separator+"language science press data");
-		File outputDir = new File("resources"+File.separator+"xml-database");
+		File inputDir = new File("resources"+File.separator+"language science press raw data");
+		File outputDir = new File("resources"+File.separator+"languageSciencePress-database");
 		transformer.transform(inputDir, outputDir);
 	}
 }

@@ -3,6 +3,8 @@ package logic;
 import java.util.ArrayList;
 import java.util.List;
 
+import data_representation.DBPediaLanguageInfo;
+
 /***
  * This class contains all data and functionality needed for questions and their processing
  * @author LeonBornemann
