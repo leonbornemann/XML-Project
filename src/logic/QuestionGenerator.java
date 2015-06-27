@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.basex.core.BaseXException;
 
@@ -71,8 +73,19 @@ public class QuestionGenerator {
 	 * @throws UnknownLanguageException
 	 */
 	public Collection<Question> getDistinctQuestions(int count) throws BaseXException, UnknownLanguageException{
-		List<String> allLanguageNames = LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames();
-		Collections.shuffle(allLanguageNames);
+	    
+	    Set<String> languageSciencePress = Main.cleanup(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames());
+        Set<String> dbPedia = Main.cleanup(DBPediaDatabase.INSTANCE.getDBpediaLanguages());
+        Set<String> languagesInBoth = new HashSet<>(languageSciencePress);        
+        languagesInBoth.retainAll(dbPedia);
+		//List<String> allLanguageNames = LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames();
+		//Collections.shuffle(allLanguageNames);
+        List<String> allLanguageNames = new ArrayList<String>();
+        for (String s : languagesInBoth) {
+            allLanguageNames.add(s);
+        }
+        Collections.shuffle(allLanguageNames);
+        
 		List<Question> questionData = new ArrayList<>(count);
 		for(String languageName : allLanguageNames.subList(0, count)){
 			questionData.add(buildQuestionData(languageName));
