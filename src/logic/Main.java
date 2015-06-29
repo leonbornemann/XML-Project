@@ -38,13 +38,11 @@ public class Main {
 		System.out.println("languages in dbpedia count: " + dbPedia.size());
 		System.out.println("valid languages count(after name cleanup): " + languagesInBoth.size());
 		System.out.println(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames().size());
-		//languagesInBoth.forEach(e -> System.out.println(e));
-		assert(languageSciencePress.equals(new HashSet<>(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames())));
-		assert(dbPedia.equals(new HashSet<>(DBPediaDatabase.INSTANCE.getDBpediaLanguages())));
-
+		languagesInBoth.forEach(e -> System.out.println(e));
+		//note:
 	}
 
-	private static Set<String> cleanup(Collection<String> stringSet) {
+	protected static Set<String> cleanup(Collection<String> stringSet) {
 		Set<String> cleaned = new HashSet<>();
 		stringSet.forEach(e -> cleaned.add(e.trim().replaceAll("\n|\r\n", "")) );
 		return cleaned;

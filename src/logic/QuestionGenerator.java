@@ -96,6 +96,10 @@ public class QuestionGenerator {
 	public Collection<Question> getDistinctQuestions(int count) throws BaseXException, UnknownLanguageException{
 		List<String> allLanguageNames = getValidLanguageNames();
 		Collections.shuffle(allLanguageNames);
+        for (String s : allLanguageNames) {
+            allLanguageNames.add(s);
+        }
+        Collections.shuffle(allLanguageNames);
 		List<Question> questionData = new ArrayList<>(count);
 		for(String languageName : allLanguageNames.subList(0, count)){
 			questionData.add(buildQuestionData(languageName));
