@@ -39,7 +39,9 @@ public class Main {
 		System.out.println("valid languages count(after name cleanup): " + languagesInBoth.size());
 		System.out.println(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames().size());
 		//languagesInBoth.forEach(e -> System.out.println(e));
-		//note:
+		assert(languageSciencePress.equals(new HashSet<>(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames())));
+		assert(dbPedia.equals(new HashSet<>(DBPediaDatabase.INSTANCE.getDBpediaLanguages())));
+
 	}
 
 	private static Set<String> cleanup(Collection<String> stringSet) {

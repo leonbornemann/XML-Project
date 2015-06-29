@@ -448,7 +448,6 @@
          <lat>9^^http://www.w3.org/2001/XMLSchema#integer</lat>
       </spokenIn>
    </language>
-   <language language="German" />
    <language language="Turkana">
       <spokenIn>
          <country>http://dbpedia.org/resource/Kenya</country>

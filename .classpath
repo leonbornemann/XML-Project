@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="tests"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/basex xml database/BaseX811.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
@@ -27,5 +28,6 @@
 	<classpathentry kind="lib" path="lib/apache jena/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="lib/apache jena/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="lib/saxon/saxon9he.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

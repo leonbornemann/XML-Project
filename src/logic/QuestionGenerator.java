@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Random;
+import java.util.Set;
 
 import org.basex.core.BaseXException;
 
@@ -23,6 +26,25 @@ import database.exceptions.UnknownLanguageException;
  */
 public class QuestionGenerator {
 
+	private Random random;
+
+	public QuestionGenerator(){
+		this.random = new Random();
+	}
+	
+	/***
+	 * 
+	 * @return A List of Languages for which Questions can be generated (i.e. languages in both databases)
+	 * @throws BaseXException 
+	 */
+	public List<String> getValidLanguageNames() throws BaseXException{
+		Set<String> languageSciencePress = new HashSet<>(LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames());
+		Set<String> dbPedia = new HashSet<>(DBPediaDatabase.INSTANCE.getDBpediaLanguages());
+		Set<String> languagesInBoth = new HashSet<>(languageSciencePress);
+		languagesInBoth.retainAll(dbPedia);
+		return new ArrayList<>(languagesInBoth);
+	}
+	
 	/***
 	 * Randomly Generates a new Question.
 	 * @return A new Question
@@ -30,7 +52,8 @@ public class QuestionGenerator {
 	 * @throws UnknownLanguageException
 	 */
 	public Question getNewQuestion() throws BaseXException, UnknownLanguageException{
-		String languageName = LanguageSciencePressDatabase.INSTANCE.getRandomLanguageName();
+		List<String> languageList = getValidLanguageNames();
+		String languageName = languageList.get(random.nextInt(languageList.size()));
 		return buildQuestionData(languageName);
 	}
 
@@ -71,7 +94,7 @@ public class QuestionGenerator {
 	 * @throws UnknownLanguageException
 	 */
 	public Collection<Question> getDistinctQuestions(int count) throws BaseXException, UnknownLanguageException{
-		List<String> allLanguageNames = LanguageSciencePressDatabase.INSTANCE.getAllLanguageNames();
+		List<String> allLanguageNames = getValidLanguageNames();
 		Collections.shuffle(allLanguageNames);
 		List<Question> questionData = new ArrayList<>(count);
 		for(String languageName : allLanguageNames.subList(0, count)){
@@ -80,6 +103,12 @@ public class QuestionGenerator {
 		return questionData;
 	}
 
+	/***
+	 * Returns a Question for a specific language.
+	 * @param languageName
+	 * @return
+	 * @throws UnknownLanguageException if languageName is not a valid Language
+	 */
 	public Question getQuestion(String languageName) throws UnknownLanguageException {
 		return buildQuestionData(languageName);
 	}
