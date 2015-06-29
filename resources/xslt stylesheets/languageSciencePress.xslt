@@ -14,14 +14,24 @@
 				  	<xsl:attribute name="language">
     					<xsl:value-of select="normalize-space(language/text())"/>
     				</xsl:attribute>
-    				<xsl:apply-templates select="child::alignedwords"/>
-				  	<xsl:apply-templates select="following-sibling::examples"/>
+    				<xsl:if test="alignedwords/* and translation/text()">
+    					<example>
+    						<xsl:apply-templates select="child::alignedwords"/>
+   							<translation>
+					  			<xsl:value-of select="translation/text()"/>
+					  		</translation>
+				  		</example>
+    				</xsl:if>
 				  	<xsl:apply-templates select="following-sibling::examples"/>
 				  </languageExample>
 				</xsl:when> 
 				<xsl:otherwise>
-					<xsl:apply-templates/>
-					<xsl:apply-templates select="following-sibling::examples"/>
+					<example>
+						<xsl:apply-templates/>
+						<translation>
+					  	<xsl:value-of select="translation/text()"/>
+					  	</translation>
+				  	</example>
 				  	<xsl:apply-templates select="following-sibling::examples"/>
 				</xsl:otherwise>
 			</xsl:choose>
@@ -32,14 +42,12 @@
 		</xsl:template>
 		
 		<xsl:template match="alignedwords">
-			<example>
-				<original>
-					<xsl:apply-templates mode = "original"/>
-				</original>
-				<translation>
-					<xsl:apply-templates mode = "translation"/>
-				</translation>
-			</example>
+			<original>
+				<xsl:apply-templates mode = "original"/>
+			</original>
+			<detailedTranslation>
+				<xsl:apply-templates mode = "translation"/>
+			</detailedTranslation>
 		</xsl:template>
 		
 		<xsl:template match="morpheme" mode = "original">

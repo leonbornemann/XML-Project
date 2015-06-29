@@ -188,7 +188,7 @@ public class LanguageSciencePressDatabase {
 			translations = (Arrays.asList((new XQuery(query).execute(context))
 					.split("\n")));
 		}
-
+		
 		for (int i = 0; i < translations.size(); i++) {
 			if (!(translations.get(i).trim().equals("") || originals.get(i)
 					.trim().equals(""))) {
