@@ -1,0 +1,59 @@
+<xmlquestionlist id="1">
+  <questionList id="2">
+    <xmlquestion id="3">
+      <questionSentence id="4">
+        <text>The sentence &quot;Náe nakaye.&quot; is in which language?</text>
+        <original>Náe nakaye.</original>
+        <translation>‘He sees me.’</translation>
+      </questionSentence>
+      <questionAnswers id="5">
+        <right>Fore</right>
+        <wrong1>Tobelo</wrong1>
+        <wrong2>Stöde (Md)</wrong2>
+        <wrong3>Nuckö (Es)</wrong3>
+      </questionAnswers>
+      <countryList id="6">
+        <xmlquestion.XMLCountry id="7">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </xmlquestion.XMLCountry>
+        <xmlquestion.XMLCountry id="8">
+          <name>Eastern_Highlands_Province</name>
+          <lattitude>6.0</lattitude>
+          <longitude>145.0</longitude>
+        </xmlquestion.XMLCountry>
+        <xmlquestion.XMLCountry id="9">
+          <name>Goroka_District</name>
+          <lattitude>-6.08232</lattitude>
+          <longitude>145.39</longitude>
+        </xmlquestion.XMLCountry>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="10">
+      <questionSentence id="11">
+        <text>The sentence &quot;nambanyá mená&quot; is in which language?</text>
+        <original>nambanyá mená</original>
+        <translation>‘my pig’</translation>
+      </questionSentence>
+      <questionAnswers id="12">
+        <right>Enga</right>
+        <wrong1>Bokmål Norwegian</wrong1>
+        <wrong2>German</wrong2>
+        <wrong3>Älvdalen (Os) (18th century)</wrong3>
+      </questionAnswers>
+      <countryList id="13">
+        <xmlquestion.XMLCountry id="14">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </xmlquestion.XMLCountry>
+        <xmlquestion.XMLCountry id="15">
+          <name>Enga_Province</name>
+          <lattitude>5.0</lattitude>
+          <longitude>143.0</longitude>
+        </xmlquestion.XMLCountry>
+      </countryList>
+    </xmlquestion>
+  </questionList>
+</xmlquestionlist>
