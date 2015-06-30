@@ -11,8 +11,6 @@ import java.io.InputStreamReader;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
-import data_representation.Country;
-
 public class XMLUtilities {
 
     /**
@@ -26,7 +24,7 @@ public class XMLUtilities {
         xstream.setMode(XStream.ID_REFERENCES);
         xstream.alias("sentence", Sentence.class);
         xstream.alias("answers", Answers.class);
-        xstream.alias("country",Country.class);
+        xstream.alias("country",XMLCountry.class);
         xstream.alias("xmlquestion", XMLQuestion.class);
         xstream.alias("xmlquestionlist",XMLQuestionList.class);
         
@@ -45,7 +43,7 @@ public class XMLUtilities {
         xstream.setMode(XStream.ID_REFERENCES);
         xstream.alias("sentence", Sentence.class);
         xstream.alias("answers", Answers.class);
-        xstream.alias("country",Country.class);
+        xstream.alias("country",XMLCountry.class);
         xstream.alias("xmlquestion", XMLQuestion.class);
         xstream.alias("xmlquestionlist",XMLQuestionList.class);
         

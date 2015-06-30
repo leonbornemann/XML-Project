@@ -1,12 +1,6 @@
 package xmlquestion;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-
-import logic.Question;
-import logic.QuestionGenerator;
-import data_representation.Country;
 
 
 public class XMLQuestion {
@@ -86,41 +80,4 @@ public class XMLQuestion {
         
         return ret;
     }
-    
-    public static void main(String[] args) throws Exception{
-        
-        QuestionGenerator qgen = new QuestionGenerator();
-        List<String> answerList;
-        List<Country> countryList;
-                
-        Collection<Question> qCollection = qgen.getDistinctQuestions(2);
-        Question[] questionArray = qCollection.toArray((new Question[qCollection.size ()]));
-        
-         
-        for(int i = 0; i<questionArray.length; i++) {
-            
-            Question q = questionArray[i];
-            answerList = q.getAllAnswers();
-            System.out.println("Question text " + q.getQuestionText());
-            System.out.println("Original " + q.getOriginal());
-            System.out.println("Translation " + q.getTranslation());
-            System.out.println("Answers: ");
-            for (String s : answerList) {
-                System.out.println(s);
-            }
-            System.out.println("Correct answer: " + q.getRightAnswer());
-            System.out.println("Additional language info: ");
-            countryList = q.getLanguageInfo().getSpokenIn();
-            System.out.println("Country info: ");
-            for (Country c : countryList){
-                System.out.println("Name: " + c.getName());
-                System.out.println("Lattitude: " + c.getLattitude());
-                System.out.println("Longitude: " + c.getLongitude());
-            }
-            
-        }
-        
-    }
-
-
 }
