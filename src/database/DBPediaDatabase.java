@@ -26,7 +26,12 @@ public class DBPediaDatabase {
 	private DBPediaDatabase(){
 		context = new Context();
 		try {
-			new CreateDB("DBpediaDB", "resources/dbpedia-database/extraInformation.xml").execute(context);
+		    String path = this.getClass().getClassLoader().getResource("resourcesDB/dbpedia-database/extraInformation.xml").getPath();
+		    
+		    System.out.println(path);
+		    
+		    
+			new CreateDB("DBpediaDB").execute(context);
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

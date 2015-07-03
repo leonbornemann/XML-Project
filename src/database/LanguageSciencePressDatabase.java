@@ -1,5 +1,6 @@
 package database;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -14,6 +15,8 @@ import org.basex.core.cmd.XQuery;
 
 import data_representation.Example;
 import data_representation.LanguageContent;
+import java.nio.file.*;
+
 
 public class LanguageSciencePressDatabase {
 
@@ -21,12 +24,22 @@ public class LanguageSciencePressDatabase {
 	
 	private Context context;
 	private final String dbName = "DBExample";
-	private String dbFilepath = "resources/languageSciencePress-database/";
+	private String dbFilepath = this.getClass().getClassLoader().getResource("../resourcesDB/languageSciencePress-database/").getPath();
+	
 
 	public LanguageSciencePressDatabase(){
 		this.context = new Context();
+		
 		try {
 			new CreateDB(dbName).execute(context);
+			File file = new File(dbFilepath);
+			System.out.println("DBFilepath: " + dbFilepath);
+			//File file = new File("/WEB-INF/classes/questionSet.txt");
+			System.out.println(file.exists());
+			//System.out.println(new File("").getAbsolutePath());
+			
+			
+			
 			new Add("", dbFilepath).execute(context);
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
