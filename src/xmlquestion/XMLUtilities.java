@@ -2,11 +2,14 @@ package xmlquestion;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
@@ -20,14 +23,14 @@ public class XMLUtilities {
      */
     public static String questionListToXML(XMLQuestionList questionList){
         
-        XStream xstream = new XStream(new DomDriver());
+        XStream xstream = new XStream(new DomDriver("UTF-8"));
         xstream.setMode(XStream.ID_REFERENCES);
         xstream.alias("sentence", Sentence.class);
         xstream.alias("answers", Answers.class);
         xstream.alias("country",XMLCountry.class);
         xstream.alias("xmlquestion", XMLQuestion.class);
         xstream.alias("xmlquestionlist",XMLQuestionList.class);
-        
+                
         return xstream.toXML(questionList);
         
     }
@@ -39,7 +42,7 @@ public class XMLUtilities {
      */
     public static XMLQuestionList convertFromXML(String XMLString) {
         XMLQuestionList ql = null;
-        XStream xstream = new XStream(new DomDriver());
+        XStream xstream = new XStream(new DomDriver("UTF-8"));
         xstream.setMode(XStream.ID_REFERENCES);
         xstream.alias("sentence", Sentence.class);
         xstream.alias("answers", Answers.class);
@@ -137,9 +140,43 @@ public class XMLUtilities {
         }
  
         return sb.toString();
+  
+    }
+    
+    public static boolean inputStreamToFile(InputStream inputStream, String path) {
         
+        OutputStream outputStream = null;
         
+        //System.out.println(path);
         
+        try {
+            // write the inputStream to a FileOutputStream
+            outputStream = 
+                        new FileOutputStream(new File(path));
+     
+            int read = 0;
+            byte[] bytes = new byte[1024];
+     
+            while ((read = inputStream.read(bytes)) != -1) {
+                outputStream.write(bytes, 0, read);
+            }                 
+            System.out.println("Done!");
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+            return false;
+        } finally {            
+            if (outputStream != null) {
+                try {
+                    // outputStream.flush();
+                    outputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+     
+            }            
+        }
+        return true;
     }
     
     

@@ -3,6 +3,7 @@ package xmlquestion;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Random;
 
 import logic.Question;
 import logic.QuestionGenerator;
@@ -63,4 +64,24 @@ public class XMLQuestionListGenerator {
                 
         return xmlQl;
     }
+    
+    public static XMLQuestionList generateRandomQuestions(XMLQuestionList questionSet, int nQuestions){
+        
+        ArrayList<XMLQuestion> qList = questionSet.questionList;
+        ArrayList<XMLQuestion> retList = new ArrayList<XMLQuestion>();
+        
+    
+        //Create as many random indexes as nQuestions
+        Random rand = new Random();
+        
+        for (int i = 0; i<nQuestions; i++){
+            int randomNum = rand.nextInt(44);
+            XMLQuestion newQuestion = qList.get(randomNum);
+            retList.add(newQuestion);                                    
+        }
+        
+        
+        return new XMLQuestionList(retList);
+    }
+    
 }

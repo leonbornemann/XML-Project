@@ -10,6 +10,10 @@ public class XMLQuestionList {
         this.questionList = new ArrayList<XMLQuestion>();
     }
     
+    public XMLQuestionList(ArrayList<XMLQuestion> retList) {
+        this.questionList = retList;
+    }
+
     public boolean addQuestion(XMLQuestion q) {
         this.questionList.add(q);
         return true;
