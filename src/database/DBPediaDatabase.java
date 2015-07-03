@@ -28,11 +28,12 @@ public class DBPediaDatabase {
 	private DBPediaDatabase(){
 		context = new Context();
 		try {
-		    InputStream stream = this.getClass().getClassLoader().getResourceAsStream("../resourcesDB/dbpedia-database/extraInformation.xml");
 			new CreateDB("DBpediaDB").execute(context);
+			new Add("","resources/dbpedia-database/extraInformation.xml").execute(context);
+			/*InputStream stream = this.getClass().getClassLoader().getResourceAsStream("../resourcesDB/dbpedia-database/extraInformation.xml");
 			Add addCommand = new Add("");
 			addCommand.setInput(stream);
-			addCommand.execute(context);
+			addCommand.execute(context);*/
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

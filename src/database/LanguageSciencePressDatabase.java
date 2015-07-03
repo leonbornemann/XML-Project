@@ -29,15 +29,16 @@ public class LanguageSciencePressDatabase {
 
 	public LanguageSciencePressDatabase(){
 		this.context = new Context();
-		
 		try {
+			String dbPath = "resources/languageSciencePress-database/";
 			new CreateDB(dbName).execute(context);
-			addToDatabase("../resourcesDB/languageSciencePress-database/cangemi.xml");
+			new Add("",dbPath).execute(context);
+			/*addToDatabase("../resourcesDB/languageSciencePress-database/cangemi.xml");
 			addToDatabase("../resourcesDB/languageSciencePress-database/dahl.xml");
 			addToDatabase("../resourcesDB/languageSciencePress-database/handschuh.xml");
 			addToDatabase("../resourcesDB/languageSciencePress-database/klamer.xml");
 			addToDatabase("../resourcesDB/languageSciencePress-database/schackow.xml");
-			addToDatabase("../resourcesDB/languageSciencePress-database/wilbur.xml");
+			addToDatabase("../resourcesDB/languageSciencePress-database/wilbur.xml");*/
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

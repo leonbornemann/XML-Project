@@ -1,0 +1,1234 @@
+<xmlquestionlist id="1">
+  <questionList id="2">
+    <xmlquestion id="3">
+      <questionSentence id="4">
+        <text>The sentence &quot;Mormor blev alldeles röd i ögonen.&quot; is in which language?</text>
+        <original>Mormor blev alldeles röd i ögonen.</original>
+        <translation>‘Granny’s face became quite red.’</translation>
+      </questionSentence>
+      <questionAnswers id="5">
+        <right>Swedish</right>
+        <wrong1>Järvsö (Hä)</wrong1>
+        <wrong2>Ljusnedal (Hd)</wrong2>
+        <wrong3>Sävar (SVb)</wrong3>
+      </questionAnswers>
+      <countryList id="6">
+        <country id="7">
+          <name>Finland</name>
+          <lattitude>60.0</lattitude>
+          <longitude>24.0</longitude>
+        </country>
+        <country id="8">
+          <name>Sweden</name>
+          <lattitude>59.0</lattitude>
+          <longitude>18.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="9">
+      <questionSentence id="10">
+        <text>The sentence &quot;nambanyá mená&quot; is in which language?</text>
+        <original>nambanyá mená</original>
+        <translation>‘my pig’</translation>
+      </questionSentence>
+      <questionAnswers id="11">
+        <right>Enga</right>
+        <wrong1>Hössjö Umeå (SVb)</wrong1>
+        <wrong2>Våmhus (Os)</wrong2>
+        <wrong3>Mangskog (Vm)</wrong3>
+      </questionAnswers>
+      <countryList id="12">
+        <country id="13">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </country>
+        <country id="14">
+          <name>Enga_Province</name>
+          <lattitude>5.0</lattitude>
+          <longitude>143.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="15">
+      <questionSentence id="16">
+        <text>The sentence &quot;’iipaanya kwsedesh (duum)&quot; is in which language?</text>
+        <original>’iipaanya kwsedesh (duum)</original>
+        <translation>‘The man is a doctor.’</translation>
+      </questionSentence>
+      <questionAnswers id="17">
+        <right>Maricopa</right>
+        <wrong1>Oirata</wrong1>
+        <wrong2>Utmeland, Mora (Os)</wrong2>
+        <wrong3>Grytnäs (Be)</wrong3>
+      </questionAnswers>
+      <countryList id="18">
+        <country id="19">
+          <name>United_States</name>
+          <lattitude>38.0</lattitude>
+          <longitude>77.0</longitude>
+        </country>
+        <country id="20">
+          <name>Arizona</name>
+          <lattitude>31.0</lattitude>
+          <longitude>109.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="21">
+      <questionSentence id="22">
+        <text>The sentence &quot;Stakkars Jon og Lise som må gå på skolen i gammelklær.&quot; is in which language?</text>
+        <original>Stakkars Jon og Lise som må gå på skolen i gammelklær.</original>
+        <translation>‘Poor Jon and Lise, who have to go to school in old clothes.’</translation>
+      </questionSentence>
+      <questionAnswers id="23">
+        <right>Norwegian</right>
+        <wrong1>Färila</wrong1>
+        <wrong2>Yiddish</wrong2>
+        <wrong3>Träslövsläge (Hl)</wrong3>
+      </questionAnswers>
+      <countryList id="24">
+        <country id="25">
+          <name>Norway</name>
+          <lattitude>59.0</lattitude>
+          <longitude>10.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="26">
+      <questionSentence id="27">
+        <text>The sentence &quot;Adam geldi&quot; is in which language?</text>
+        <original>Adam geldi</original>
+        <translation>‘The man came.’</translation>
+      </questionSentence>
+      <questionAnswers id="28">
+        <right>Turkish</right>
+        <wrong1>Leksand (Ns)</wrong1>
+        <wrong2>Karleby (NOb)</wrong2>
+        <wrong3>Tjöck (SOb)</wrong3>
+      </questionAnswers>
+      <countryList id="29">
+        <country id="30">
+          <name>Cyprus</name>
+          <lattitude>35.0</lattitude>
+          <longitude>33.0</longitude>
+        </country>
+        <country id="31">
+          <name>Turkey</name>
+          <lattitude>39.0</lattitude>
+          <longitude>32.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="32">
+      <questionSentence id="33">
+        <text>The sentence &quot;Ging [abang mi] miso.&quot; is in which language?</text>
+        <original>Ging [abang mi] miso.</original>
+        <translation>‘They stay in the village.’</translation>
+      </questionSentence>
+      <questionAnswers id="34">
+        <right>Kaera</right>
+        <wrong1>Westrobothnian</wrong1>
+        <wrong2>Walapai</wrong2>
+        <wrong3>Hungarian</wrong3>
+      </questionAnswers>
+      <countryList id="35">
+        <country id="36">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="37">
+          <name>Pantar</name>
+          <lattitude>-8.41667</lattitude>
+          <longitude>124.117</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="38">
+      <questionSentence id="39">
+        <text>The sentence &quot;inte ee asi&quot; is in which language?</text>
+        <original>inte ee asi</original>
+        <translation>‘We saw you.’</translation>
+      </questionSentence>
+      <questionAnswers id="40">
+        <right>Oirata</right>
+        <wrong1>Written Medieval Swedish</wrong1>
+        <wrong2>Lulemål (Ll)</wrong2>
+        <wrong3>Selånger (Md)</wrong3>
+      </questionAnswers>
+      <countryList id="41">
+        <country id="42">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="43">
+          <name>Kisar</name>
+          <lattitude>-8.06</lattitude>
+          <longitude>127.18</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="44">
+      <questionSentence id="45">
+        <text>The sentence &quot;ave=ve gazu te livuli Australia lau boi&quot; is in which language?</text>
+        <original>ave=ve gazu te livuli Australia lau boi</original>
+        <translation>‘We shipped ripe coconuts to Australia.’</translation>
+      </questionSentence>
+      <questionAnswers id="46">
+        <right>Savosavo</right>
+        <wrong1>Arbore</wrong1>
+        <wrong2>Standard Arabic</wrong2>
+        <wrong3>Barai</wrong3>
+      </questionAnswers>
+      <countryList id="47">
+        <country id="48">
+          <name>Solomon_Islands</name>
+          <lattitude>9.0</lattitude>
+          <longitude>159.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="49">
+      <questionSentence id="50">
+        <text>The sentence &quot;a szomszéd kertje&quot; is in which language?</text>
+        <original>a szomszéd kertje</original>
+        <translation>‘the neighbour’s garden’</translation>
+      </questionSentence>
+      <questionAnswers id="51">
+        <right>Hungarian</right>
+        <wrong1>Mora (Os)</wrong1>
+        <wrong2>Munsala (NOb)</wrong2>
+        <wrong3>Leksand (Ns)</wrong3>
+      </questionAnswers>
+      <countryList id="52">
+        <country id="53">
+          <name>Ukraine</name>
+          <lattitude>50.0</lattitude>
+          <longitude>30.0</longitude>
+        </country>
+        <country id="54">
+          <name>Hungary</name>
+          <lattitude>47.0</lattitude>
+          <longitude>19.0</longitude>
+        </country>
+        <country id="55">
+          <name>Romania</name>
+          <lattitude>44.0</lattitude>
+          <longitude>26.0</longitude>
+        </country>
+        <country id="56">
+          <name>Serbia</name>
+          <lattitude>44.0</lattitude>
+          <longitude>20.0</longitude>
+        </country>
+        <country id="57">
+          <name>Slovakia</name>
+          <lattitude>48.0</lattitude>
+          <longitude>17.0</longitude>
+        </country>
+        <country id="58">
+          <name>Slovenia</name>
+          <lattitude>46.0</lattitude>
+          <longitude>14.0</longitude>
+        </country>
+        <country id="59">
+          <name>Austria</name>
+          <lattitude>48.0</lattitude>
+          <longitude>16.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="60">
+      <questionSentence id="61">
+        <text>The sentence &quot;naana baazar jaxna&quot; is in which language?</text>
+        <original>naana baazar jaxna</original>
+        <translation>‘The mother went to the market.’</translation>
+      </questionSentence>
+      <questionAnswers id="62">
+        <right>Chechen</right>
+        <wrong1>Bunaq</wrong1>
+        <wrong2>Mian</wrong2>
+        <wrong3>Ormsö (Es)</wrong3>
+      </questionAnswers>
+      <countryList id="63">
+        <country id="64">
+          <name>Chechnya</name>
+          <lattitude>43.0</lattitude>
+          <longitude>45.0</longitude>
+        </country>
+        <country id="65">
+          <name>Russia</name>
+          <lattitude>55.0</lattitude>
+          <longitude>37.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="66">
+      <questionSentence id="67">
+        <text>The sentence &quot;Anakipraud.&quot; is in which language?</text>
+        <original>Anakipraud.</original>
+        <translation>‘He ties me.’</translation>
+      </questionSentence>
+      <questionAnswers id="68">
+        <right>Marind</right>
+        <wrong1>Järvsö (Hä)</wrong1>
+        <wrong2>Hungarian</wrong2>
+        <wrong3>Mangarayi</wrong3>
+      </questionAnswers>
+      <countryList id="69">
+        <country id="70">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="71">
+      <questionSentence id="72">
+        <text>The sentence &quot;tama? gakiye&quot; is in which language?</text>
+        <original>tama? gakiye</original>
+        <translation>‘The dog died.’</translation>
+      </questionSentence>
+      <questionAnswers id="73">
+        <right>Nabak</right>
+        <wrong1>Latvian</wrong1>
+        <wrong2>Upplandic</wrong2>
+        <wrong3>Pitemål (Pm)</wrong3>
+      </questionAnswers>
+      <countryList id="74">
+        <country id="75">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </country>
+        <country id="76">
+          <name>Morobe_Province</name>
+          <lattitude>6.0</lattitude>
+          <longitude>146.0</longitude>
+        </country>
+        <country id="77">
+          <name>Huon_Peninsula</name>
+          <lattitude>-6.41667</lattitude>
+          <longitude>147.5</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="78">
+      <questionSentence id="79">
+        <text>The sentence &quot;yaganene&quot; is in which language?</text>
+        <original>yaganene</original>
+        <translation>‘my pig’</translation>
+      </questionSentence>
+      <questionAnswers id="80">
+        <right>Fore</right>
+        <wrong1>Amharic</wrong1>
+        <wrong2>Datooga</wrong2>
+        <wrong3>Oirata</wrong3>
+      </questionAnswers>
+      <countryList id="81">
+        <country id="82">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </country>
+        <country id="83">
+          <name>Eastern_Highlands_Province</name>
+          <lattitude>6.0</lattitude>
+          <longitude>145.0</longitude>
+        </country>
+        <country id="84">
+          <name>Goroka_District</name>
+          <lattitude>-6.08232</lattitude>
+          <longitude>145.39</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="85">
+      <questionSentence id="86">
+        <text>The sentence &quot;wumbawa ?andi ?ir ??aygini wuburgba ?abudalan&quot; is in which language?</text>
+        <original>wumbawa ?andi ?ir ??aygini wuburgba ?abudalan</original>
+        <translation>‘One tree is standing in the middle of the billabong.’</translation>
+      </questionSentence>
+      <questionAnswers id="87">
+        <right>Mangarayi</right>
+        <wrong1>Early Modern Swedish</wrong1>
+        <wrong2>Latvian</wrong2>
+        <wrong3>Swedish L2 (Spanish speakers)</wrong3>
+      </questionAnswers>
+      <countryList id="88">
+        <country id="89">
+          <name>Northern_Territory</name>
+          <lattitude>20.0</lattitude>
+          <longitude>133.0</longitude>
+        </country>
+        <country id="90">
+          <name>Australia</name>
+          <lattitude>35.0</lattitude>
+          <longitude>149.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="91">
+      <questionSentence id="92">
+        <text>The sentence &quot;Andrehe’e nohi [si=löna nilau nono matua]&quot; is in which language?</text>
+        <original>Andrehe’e nohi [si=löna nilau nono matua]</original>
+        <translation>‘That is the coconut tree the boy did not climb.’</translation>
+      </questionSentence>
+      <questionAnswers id="93">
+        <right>Nias</right>
+        <wrong1>Torp (Md)</wrong1>
+        <wrong2>Pojo (Ny)</wrong2>
+        <wrong3>Pyttis (Ny)</wrong3>
+      </questionAnswers>
+      <countryList id="94">
+        <country id="95">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="96">
+          <name>North_Sumatra</name>
+          <lattitude>2.0</lattitude>
+          <longitude>99.0</longitude>
+        </country>
+        <country id="97">
+          <name>Batu_Islands</name>
+          <lattitude>-0.2</lattitude>
+          <longitude>98.5</longitude>
+        </country>
+        <country id="98">
+          <name>Nias</name>
+          <lattitude>1.1</lattitude>
+          <longitude>97.5333</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="99">
+      <questionSentence id="100">
+        <text>The sentence &quot;ninye naarye kwebreibse&quot; is in which language?</text>
+        <original>ninye naarye kwebreibse</original>
+        <translation>‘It was me who created man.’</translation>
+      </questionSentence>
+      <questionAnswers id="101">
+        <right>Eipo</right>
+        <wrong1>“North Swedish” (location unspecified)</wrong1>
+        <wrong2>Skellefteå country parish (NVb)</wrong2>
+        <wrong3>Bjurholm (ÅV)</wrong3>
+      </questionAnswers>
+      <countryList id="102">
+        <country id="103">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="104">
+          <name>West_Papua_(region)</name>
+          <lattitude>-4.0</lattitude>
+          <longitude>136.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="105">
+      <questionSentence id="106">
+        <text>The sentence &quot;e none&quot; is in which language?</text>
+        <original>e none</original>
+        <translation>‘my people’</translation>
+      </questionSentence>
+      <questionAnswers id="107">
+        <right>Barai</right>
+        <wrong1>Älvdalen (Os) (18th century)</wrong1>
+        <wrong2>French</wrong2>
+        <wrong3>“North Swedish” (unspecified location)</wrong3>
+      </questionAnswers>
+      <countryList id="108">
+        <country id="109">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="110">
+      <questionSentence id="111">
+        <text>The sentence &quot;Jan z’n boek&quot; is in which language?</text>
+        <original>Jan z’n boek</original>
+        <translation>‘Jan’s book’</translation>
+      </questionSentence>
+      <questionAnswers id="112">
+        <right>Dutch</right>
+        <wrong1>Hössjö Umeå (SVb)</wrong1>
+        <wrong2>Hållnäs (Up)</wrong2>
+        <wrong3>Swedish (1733)</wrong3>
+      </questionAnswers>
+      <countryList id="113">
+        <country id="114">
+          <name>Cura%C3%A7ao</name>
+          <lattitude>12.0</lattitude>
+          <longitude>68.0</longitude>
+        </country>
+        <country id="115">
+          <name>Aruba</name>
+          <lattitude>12.0</lattitude>
+          <longitude>70.0</longitude>
+        </country>
+        <country id="116">
+          <name>Belgium</name>
+          <lattitude>50.0</lattitude>
+          <longitude>4.0</longitude>
+        </country>
+        <country id="117">
+          <name>Netherlands</name>
+          <lattitude>52.0</lattitude>
+          <longitude>4.0</longitude>
+        </country>
+        <country id="118">
+          <name>Suriname</name>
+          <lattitude>5.0</lattitude>
+          <longitude>55.0</longitude>
+        </country>
+        <country id="119">
+          <name>Sint_Maarten</name>
+          <lattitude>18.0</lattitude>
+          <longitude>63.0</longitude>
+        </country>
+        <country id="120">
+          <name>France</name>
+          <lattitude>48.0</lattitude>
+          <longitude>2.0</longitude>
+        </country>
+        <country id="121">
+          <name>Caribbean</name>
+          <lattitude>14.5256</lattitude>
+          <longitude>-75.8183</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="122">
+      <questionSentence id="123">
+        <text>The sentence &quot;En el sótano hay (*los)  ratones, y bajo la fregadera hay (*las) cucarachas.&quot; is in which language?</text>
+        <original>En el sótano hay (*los)  ratones, y bajo la fregadera hay (*las) cucarachas.</original>
+        <translation>‘In the basement there are mice and under the fridge there are cockroaches.’</translation>
+      </questionSentence>
+      <questionAnswers id="124">
+        <right>Spanish</right>
+        <wrong1>Swedish L2 (Finnish speakers)</wrong1>
+        <wrong2>Närpes</wrong2>
+        <wrong3>Boda (Ns)</wrong3>
+      </questionAnswers>
+      <countryList id="125">
+        <country id="126">
+          <name>Spain</name>
+          <lattitude>40.0</lattitude>
+          <longitude>3.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="127">
+      <questionSentence id="128">
+        <text>The sentence &quot;èyàkasÌ ay??` ?aàtùk&quot; is in which language?</text>
+        <original>èyàkasÌ ay??` ?aàtùk</original>
+        <translation>‘I have cows.’</translation>
+      </questionSentence>
+      <questionAnswers id="129">
+        <right>Turkana</right>
+        <wrong1>Ore (Os)</wrong1>
+        <wrong2>Yavapai</wrong2>
+        <wrong3>French</wrong3>
+      </questionAnswers>
+      <countryList id="130">
+        <country id="131">
+          <name>Kenya</name>
+          <lattitude>1.0</lattitude>
+          <longitude>36.0</longitude>
+        </country>
+        <country id="132">
+          <name>Lake_Turkana</name>
+          <lattitude>3.58333</lattitude>
+          <longitude>36.1167</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="133">
+      <questionSentence id="134">
+        <text>The sentence &quot;liel? m?ja&quot; is in which language?</text>
+        <original>liel? m?ja</original>
+        <translation>‘the big house’</translation>
+      </questionSentence>
+      <questionAnswers id="135">
+        <right>Latvian</right>
+        <wrong1>Nås (Vd)</wrong1>
+        <wrong2>Runic Swedish</wrong2>
+        <wrong3>Ore (Os)</wrong3>
+      </questionAnswers>
+      <countryList id="136">
+        <country id="137">
+          <name>Latvia</name>
+          <lattitude>56.0</lattitude>
+          <longitude>24.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="138">
+      <questionSentence id="139">
+        <text>The sentence &quot;k’úba neek’&quot; is in which language?</text>
+        <original>k’úba neek’</original>
+        <translation>‘(the) forelimb of a lion’</translation>
+      </questionSentence>
+      <questionAnswers id="140">
+        <right>Arbore</right>
+        <wrong1>Sävar (SVb)</wrong1>
+        <wrong2>Svartlå, Överluleå (Ll)</wrong2>
+        <wrong3>Norsjö (NVb)</wrong3>
+      </questionAnswers>
+      <countryList id="141">
+        <country id="142">
+          <name>Ethiopia</name>
+          <lattitude>9.0</lattitude>
+          <longitude>38.0</longitude>
+        </country>
+        <country id="143">
+          <name>Omo_River</name>
+          <lattitude>4.80035</lattitude>
+          <longitude>35.9671</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="144">
+      <questionSentence id="145">
+        <text>The sentence &quot;vqi hmañc ñmi vhe? syo?mki?o ñmic ttmo?ha&quot; is in which language?</text>
+        <original>vqi hmañc ñmi vhe? syo?mki?o ñmic ttmo?ha</original>
+        <translation>‘If the girl pulls the cat’s tail, it will scratch (her).’</translation>
+      </questionSentence>
+      <questionAnswers id="146">
+        <right>Yavapai</right>
+        <wrong1>Nynorsk Norwegian</wrong1>
+        <wrong2>Hungarian</wrong2>
+        <wrong3>German</wrong3>
+      </questionAnswers>
+      <countryList id="147">
+        <country id="148">
+          <name>United_States</name>
+          <lattitude>38.0</lattitude>
+          <longitude>77.0</longitude>
+        </country>
+        <country id="149">
+          <name>Arizona</name>
+          <lattitude>31.0</lattitude>
+          <longitude>109.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="150">
+      <questionSentence id="151">
+        <text>The sentence &quot;aweri ke bamban tagiram ? – gagi ke&quot; is in which language?</text>
+        <original>aweri ke bamban tagiram ? – gagi ke</original>
+        <translation>‘Who caught the fish? – Gagi (did)’</translation>
+      </questionSentence>
+      <questionAnswers id="152">
+        <right>Waskia</right>
+        <wrong1>Enga</wrong1>
+        <wrong2>Medieval Written Swedish</wrong2>
+        <wrong3>North Frisian (Fering dialect)</wrong3>
+      </questionAnswers>
+      <countryList id="153">
+        <country id="154">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="155">
+      <questionSentence id="156">
+        <text>The sentence &quot;Ma ne eebol.&quot; is in which language?</text>
+        <original>Ma ne eebol.</original>
+        <translation>‘Let me hit instead of (i.e. for) you.’</translation>
+      </questionSentence>
+      <questionAnswers id="157">
+        <right>Abui</right>
+        <wrong1>Wersing</wrong1>
+        <wrong2>Jamul Tiipay</wrong2>
+        <wrong3>Ytre Vikna (Nord-Trøndelag, Norway)</wrong3>
+      </questionAnswers>
+      <countryList id="158">
+        <country id="159">
+          <name>Alor_Island</name>
+          <lattitude>-8.25</lattitude>
+          <longitude>124.75</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="160">
+      <questionSentence id="161">
+        <text>The sentence &quot;Laampuru ilo.&quot; is in which language?</text>
+        <original>Laampuru ilo.</original>
+        <translation>‘The lamp is bright.’</translation>
+      </questionSentence>
+      <questionAnswers id="162">
+        <right>Sawila</right>
+        <wrong1>Väddö (Up)</wrong1>
+        <wrong2>Malax (SOb)</wrong2>
+        <wrong3>Latvian</wrong3>
+      </questionAnswers>
+      <countryList id="163">
+        <country id="164">
+          <name>Alor_Island</name>
+          <lattitude>-8.25</lattitude>
+          <longitude>124.75</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="165">
+      <questionSentence id="166">
+        <text>The sentence &quot;kar??? naana [?l kili?li?it]&quot; is in which language?</text>
+        <original>kar??? naana [?l kili?li?it]</original>
+        <translation>‘I want the people to work.’</translation>
+      </questionSentence>
+      <questionAnswers id="167">
+        <right>Murle</right>
+        <wrong1>Östnors-seljamål (Os)</wrong1>
+        <wrong2>Dinka (Agar Dialect)</wrong2>
+        <wrong3>Sollerön (Os)</wrong3>
+      </questionAnswers>
+      <countryList id="168">
+        <country id="169">
+          <name>Ethiopia</name>
+          <lattitude>9.0</lattitude>
+          <longitude>38.0</longitude>
+        </country>
+        <country id="170">
+          <name>South_Sudan</name>
+          <lattitude>4.0</lattitude>
+          <longitude>31.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="171">
+      <questionSentence id="172">
+        <text>The sentence &quot;di grine oygn&quot; is in which language?</text>
+        <original>di grine oygn</original>
+        <translation>‘the green eyes’</translation>
+      </questionSentence>
+      <questionAnswers id="173">
+        <right>Yiddish</right>
+        <wrong1>Inanwatan</wrong1>
+        <wrong2>Sotenäs (Bo)</wrong2>
+        <wrong3>Finnish</wrong3>
+      </questionAnswers>
+      <countryList id="174">
+        <country id="175">
+          <name>Ukraine</name>
+          <lattitude>50.0</lattitude>
+          <longitude>30.0</longitude>
+        </country>
+        <country id="176">
+          <name>Belgium</name>
+          <lattitude>50.0</lattitude>
+          <longitude>4.0</longitude>
+        </country>
+        <country id="177">
+          <name>Germany</name>
+          <lattitude>52.0</lattitude>
+          <longitude>13.0</longitude>
+        </country>
+        <country id="178">
+          <name>Moldova</name>
+          <lattitude>47.0</lattitude>
+          <longitude>28.0</longitude>
+        </country>
+        <country id="179">
+          <name>Poland</name>
+          <lattitude>52.0</lattitude>
+          <longitude>21.0</longitude>
+        </country>
+        <country id="180">
+          <name>Romania</name>
+          <lattitude>44.0</lattitude>
+          <longitude>26.0</longitude>
+        </country>
+        <country id="181">
+          <name>Russia</name>
+          <lattitude>55.0</lattitude>
+          <longitude>37.0</longitude>
+        </country>
+        <country id="182">
+          <name>Sweden</name>
+          <lattitude>59.0</lattitude>
+          <longitude>18.0</longitude>
+        </country>
+        <country id="183">
+          <name>Israel</name>
+          <lattitude>31.0</lattitude>
+          <longitude>35.0</longitude>
+        </country>
+        <country id="184">
+          <name>United_States</name>
+          <lattitude>38.0</lattitude>
+          <longitude>77.0</longitude>
+        </country>
+        <country id="185">
+          <name>Canada</name>
+          <lattitude>45.0</lattitude>
+          <longitude>75.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="186">
+      <questionSentence id="187">
+        <text>The sentence &quot;ádáhye dol´ec&quot; is in which language?</text>
+        <original>ádáhye dol´ec</original>
+        <translation>‘The child is eating.’</translation>
+      </questionSentence>
+      <questionAnswers id="188">
+        <right>Tennet</right>
+        <wrong1>Stöde (Md)</wrong1>
+        <wrong2>Kaera</wrong2>
+        <wrong3>Marind</wrong3>
+      </questionAnswers>
+      <countryList id="189">
+        <country id="190">
+          <name>South_Sudan</name>
+          <lattitude>4.0</lattitude>
+          <longitude>31.0</longitude>
+        </country>
+        <country id="191">
+          <name>Eastern_Equatoria</name>
+          <lattitude>4.0</lattitude>
+          <longitude>33.0</longitude>
+        </country>
+        <country id="192">
+          <name>Lafon_County</name>
+          <lattitude>5.03323</lattitude>
+          <longitude>32.4691</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="193">
+      <questionSentence id="194">
+        <text>The sentence &quot;Con questi disturbi ho dovuto smettere di bere il caffè. Il tè invece mi facilita la digestione.&quot; is in which language?</text>
+        <original>Con questi disturbi ho dovuto smettere di bere il caffè. Il tè invece mi facilita la digestione.</original>
+        <translation>‘With this condition I had to stop drinking the coffee. The tea instead helps my digestion.’</translation>
+      </questionSentence>
+      <questionAnswers id="195">
+        <right>Italian</right>
+        <wrong1>Written Medieval Swedish</wrong1>
+        <wrong2>Väddö (Up)</wrong2>
+        <wrong3>Dinka (Agar)</wrong3>
+      </questionAnswers>
+      <countryList id="196">
+        <country id="197">
+          <name>Vatican_City</name>
+          <lattitude>41.0</lattitude>
+          <longitude>12.0</longitude>
+        </country>
+        <country id="198">
+          <name>Croatia</name>
+          <lattitude>45.0</lattitude>
+          <longitude>16.0</longitude>
+        </country>
+        <country id="199">
+          <name>Italy</name>
+          <lattitude>41.0</lattitude>
+          <longitude>12.0</longitude>
+        </country>
+        <country id="200">
+          <name>Libya</name>
+          <lattitude>32.0</lattitude>
+          <longitude>13.0</longitude>
+        </country>
+        <country id="201">
+          <name>San_Marino</name>
+          <lattitude>43.0</lattitude>
+          <longitude>12.0</longitude>
+        </country>
+        <country id="202">
+          <name>Slovenia</name>
+          <lattitude>46.0</lattitude>
+          <longitude>14.0</longitude>
+        </country>
+        <country id="203">
+          <name>Switzerland</name>
+          <lattitude>46.0</lattitude>
+          <longitude>7.0</longitude>
+        </country>
+        <country id="204">
+          <name>Eritrea</name>
+          <lattitude>15.0</lattitude>
+          <longitude>38.0</longitude>
+        </country>
+        <country id="205">
+          <name>Ethiopia</name>
+          <lattitude>9.0</lattitude>
+          <longitude>38.0</longitude>
+        </country>
+        <country id="206">
+          <name>Federal_Government_of_Somalia</name>
+          <lattitude>2.0</lattitude>
+          <longitude>45.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="207">
+      <questionSentence id="208">
+        <text>The sentence &quot;okaho matau&quot; is in which language?</text>
+        <original>okaho matau</original>
+        <translation>‘the dog’s house’</translation>
+      </questionSentence>
+      <questionAnswers id="209">
+        <right>Tobelo</right>
+        <wrong1>Lövånger (NVb)</wrong1>
+        <wrong2>Sollerön (Os)</wrong2>
+        <wrong3>Chechen</wrong3>
+      </questionAnswers>
+      <countryList id="210">
+        <country id="211">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="212">
+          <name>Halmahera</name>
+          <lattitude>0.6</lattitude>
+          <longitude>127.867</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="213">
+      <questionSentence id="214">
+        <text>The sentence &quot;gwándà gádéemgá jèedá dûhwa&quot; is in which language?</text>
+        <original>gwándà gádéemgá jèedá dûhwa</original>
+        <translation>‘The women were among the cattle.’</translation>
+      </questionSentence>
+      <questionAnswers id="215">
+        <right>Datooga</right>
+        <wrong1>Önamål (Mora, Os)</wrong1>
+        <wrong2>Written Medieval Swedish</wrong2>
+        <wrong3>Ormsö (Es)</wrong3>
+      </questionAnswers>
+      <countryList id="216">
+        <country id="217">
+          <name>Tanzania</name>
+          <lattitude>-6.307</lattitude>
+          <longitude>34.854</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="218">
+      <questionSentence id="219">
+        <text>The sentence &quot;aliya keetta&quot; is in which language?</text>
+        <original>aliya keetta</original>
+        <translation>‘Ali’s house’</translation>
+      </questionSentence>
+      <questionAnswers id="220">
+        <right>Wolaytta</right>
+        <wrong1>Malax (SOb)</wrong1>
+        <wrong2>K&apos;abeena</wrong2>
+        <wrong3>Finnish</wrong3>
+      </questionAnswers>
+      <countryList id="221">
+        <country id="222">
+          <name>Ethiopia</name>
+          <lattitude>9.0</lattitude>
+          <longitude>38.0</longitude>
+        </country>
+        <country id="223">
+          <name>Lake_Abaya</name>
+          <lattitude>6.43333</lattitude>
+          <longitude>37.8833</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="224">
+      <questionSentence id="225">
+        <text>The sentence &quot;A her.&quot; is in which language?</text>
+        <original>A her.</original>
+        <translation>‘He climbs up.’</translation>
+      </questionSentence>
+      <questionAnswers id="226">
+        <right>Teiwa</right>
+        <wrong1>Upplandic</wrong1>
+        <wrong2>Maa</wrong2>
+        <wrong3>Kall (Jm)</wrong3>
+      </questionAnswers>
+      <countryList id="227">
+        <country id="228">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="229">
+          <name>Pantar</name>
+          <lattitude>-8.41667</lattitude>
+          <longitude>124.117</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="230">
+      <questionSentence id="231">
+        <text>The sentence &quot;David aki yona.&quot; is in which language?</text>
+        <original>David aki yona.</original>
+        <translation>‘David calls (from) down there.’</translation>
+      </questionSentence>
+      <questionAnswers id="232">
+        <right>Wersing</right>
+        <wrong1>Älvdalen (Os)</wrong1>
+        <wrong2>Rånemål (Ll)</wrong2>
+        <wrong3>Amharic</wrong3>
+      </questionAnswers>
+      <countryList id="233">
+        <country id="234">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="235">
+      <questionSentence id="236">
+        <text>The sentence &quot;ngayu(*ni) mulkulagadyangangarn&quot; is in which language?</text>
+        <original>ngayu(*ni) mulkulagadyangangarn</original>
+        <translation>‘I’m working (hard).’</translation>
+      </questionSentence>
+      <questionAnswers id="237">
+        <right>Yawuru</right>
+        <wrong1>Hungarian</wrong1>
+        <wrong2>Närpes</wrong2>
+        <wrong3>Älvdalen (Os) (18th century)</wrong3>
+      </questionAnswers>
+      <countryList id="238">
+        <country id="239">
+          <name>Australia</name>
+          <lattitude>35.0</lattitude>
+          <longitude>149.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="240">
+      <questionSentence id="241">
+        <text>The sentence &quot;Na ?arabah mi mih.&quot; is in which language?</text>
+        <original>Na ?arabah mi mih.</original>
+        <translation>‘I live in Kalabahi.’</translation>
+      </questionSentence>
+      <questionAnswers id="242">
+        <right>Adang</right>
+        <wrong1>Datooga</wrong1>
+        <wrong2>Nynorsk Norwegian</wrong2>
+        <wrong3>Junsele (Åm)</wrong3>
+      </questionAnswers>
+      <countryList id="243">
+        <country id="244">
+          <name>Alor_Island</name>
+          <lattitude>-8.25</lattitude>
+          <longitude>124.75</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="245">
+      <questionSentence id="246">
+        <text>The sentence &quot;ce k’ew kat’akh cephi k’ešu pehkhi&quot; is in which language?</text>
+        <original>ce k’ew kat’akh cephi k’ešu pehkhi</original>
+        <translation>‘The man who laughed is looking at the deer.’</translation>
+      </questionSentence>
+      <questionAnswers id="247">
+        <right>Wappo</right>
+        <wrong1>Sawila</wrong1>
+        <wrong2>Enga</wrong2>
+        <wrong3>Middle Dutch</wrong3>
+      </questionAnswers>
+      <countryList id="248">
+        <country id="249">
+          <name>United_States</name>
+          <lattitude>38.0</lattitude>
+          <longitude>77.0</longitude>
+        </country>
+        <country id="250">
+          <name>California</name>
+          <lattitude>32.0</lattitude>
+          <longitude>114.0</longitude>
+        </country>
+        <country id="251">
+          <name>Alexander_Valley_AVA</name>
+          <lattitude>38.75</lattitude>
+          <longitude>-122.9</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="252">
+      <questionSentence id="253">
+        <text>The sentence &quot;?ava?c n??m?sa?m&quot; is in which language?</text>
+        <original>?ava?c n??m?sa?m</original>
+        <translation>‘The house is white.’</translation>
+      </questionSentence>
+      <questionAnswers id="254">
+        <right>Mojave</right>
+        <wrong1>Spanish</wrong1>
+        <wrong2>Väddö (Up)</wrong2>
+        <wrong3>Bunaq</wrong3>
+      </questionAnswers>
+      <countryList id="255">
+        <country id="256">
+          <name>United_States</name>
+          <lattitude>38.0</lattitude>
+          <longitude>77.0</longitude>
+        </country>
+        <country id="257">
+          <name>California</name>
+          <lattitude>32.0</lattitude>
+          <longitude>114.0</longitude>
+        </country>
+        <country id="258">
+          <name>Arizona</name>
+          <lattitude>31.0</lattitude>
+          <longitude>109.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="259">
+      <questionSentence id="260">
+        <text>The sentence &quot;Né imeno wenbi=be.&quot; is in which language?</text>
+        <original>Né imeno wenbi=be.</original>
+        <translation>‘I am eating taro.’</translation>
+      </questionSentence>
+      <questionAnswers id="261">
+        <right>Mian</right>
+        <wrong1>Westrobothnian</wrong1>
+        <wrong2>Ore (Os)</wrong2>
+        <wrong3>Wappo</wrong3>
+      </questionAnswers>
+      <countryList id="262">
+        <country id="263">
+          <name>Papua_New_Guinea</name>
+          <lattitude>9.0</lattitude>
+          <longitude>147.0</longitude>
+        </country>
+        <country id="264">
+          <name>Sandaun_Province</name>
+          <lattitude>3.0</lattitude>
+          <longitude>141.0</longitude>
+        </country>
+        <country id="265">
+          <name>Telefomin</name>
+          <lattitude>5.0</lattitude>
+          <longitude>141.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="266">
+      <questionSentence id="267">
+        <text>The sentence &quot;A kaak&quot; is in which language?</text>
+        <original>A kaak</original>
+        <translation>‘You’re itchy.’</translation>
+      </questionSentence>
+      <questionAnswers id="268">
+        <right>Klon</right>
+        <wrong1>Turkana</wrong1>
+        <wrong2>Skellefteå country parish (NVb)</wrong2>
+        <wrong3>Nederkalix (Kx)</wrong3>
+      </questionAnswers>
+      <countryList id="269">
+        <country id="270">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="271">
+          <name>East_Nusa_Tenggara</name>
+          <lattitude>10.0</lattitude>
+          <longitude>123.0</longitude>
+        </country>
+        <country id="272">
+          <name>Alor_Island</name>
+          <lattitude>-8.25</lattitude>
+          <longitude>124.75</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="273">
+      <questionSentence id="274">
+        <text>The sentence &quot;...niin sit se mies meni ja, osti ne kaikki ilmapallot ja anto ne sille pojalle, ja sit se poika...&quot; is in which language?</text>
+        <original>...niin sit se mies meni ja, osti ne kaikki ilmapallot ja anto ne sille pojalle, ja sit se poika...</original>
+        <translation>‘…so then the man went and bought all the balloons and gave them to the boy, and the boy…’ ()</translation>
+      </questionSentence>
+      <questionAnswers id="275">
+        <right>Finnish</right>
+        <wrong1>Ore (Os)</wrong1>
+        <wrong2>Östmark (Vm)</wrong2>
+        <wrong3>Pernå (Ny)</wrong3>
+      </questionAnswers>
+      <countryList id="276">
+        <country id="277">
+          <name>Finland</name>
+          <lattitude>60.0</lattitude>
+          <longitude>24.0</longitude>
+        </country>
+        <country id="278">
+          <name>Norway</name>
+          <lattitude>59.0</lattitude>
+          <longitude>10.0</longitude>
+        </country>
+        <country id="279">
+          <name>Russia</name>
+          <lattitude>55.0</lattitude>
+          <longitude>37.0</longitude>
+        </country>
+        <country id="280">
+          <name>Sweden</name>
+          <lattitude>59.0</lattitude>
+          <longitude>18.0</longitude>
+        </country>
+        <country id="281">
+          <name>Estonia</name>
+          <lattitude>59.0</lattitude>
+          <longitude>24.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="282">
+      <questionSentence id="283">
+        <text>The sentence &quot;t?ll?qu bet&quot; is in which language?</text>
+        <original>t?ll?qu bet</original>
+        <translation>‘the big house’</translation>
+      </questionSentence>
+      <questionAnswers id="284">
+        <right>Amharic</right>
+        <wrong1>Delsbo (Hä)</wrong1>
+        <wrong2>Mangskog (Vm)</wrong2>
+        <wrong3>Oirata</wrong3>
+      </questionAnswers>
+      <countryList id="285">
+        <country id="286">
+          <name>Ethiopia</name>
+          <lattitude>9.0</lattitude>
+          <longitude>38.0</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+    <xmlquestion id="287">
+      <questionSentence id="288">
+        <text>The sentence &quot;?ini [?amo]NP mi mihi.&quot; is in which language?</text>
+        <original>?ini [?amo]NP mi mihi.</original>
+        <translation>‘They live in that (place) over there.’</translation>
+      </questionSentence>
+      <questionAnswers id="289">
+        <right>Blagar</right>
+        <wrong1>Savosavo</wrong1>
+        <wrong2>Westrobothnian</wrong2>
+        <wrong3>Eipo</wrong3>
+      </questionAnswers>
+      <countryList id="290">
+        <country id="291">
+          <name>Indonesia</name>
+          <lattitude>6.0</lattitude>
+          <longitude>106.0</longitude>
+        </country>
+        <country id="292">
+          <name>Pantar</name>
+          <lattitude>-8.41667</lattitude>
+          <longitude>124.117</longitude>
+        </country>
+      </countryList>
+    </xmlquestion>
+  </questionList>
+</xmlquestionlist>
