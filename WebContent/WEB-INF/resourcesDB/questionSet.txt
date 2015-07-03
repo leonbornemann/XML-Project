@@ -2,57 +2,47 @@
   <questionList id="2">
     <xmlquestion id="3">
       <questionSentence id="4">
-        <text>The sentence &quot;Náe nakaye.&quot; is in which language?</text>
-        <original>Náe nakaye.</original>
-        <translation>‘He sees me.’</translation>
+        <text>The sentence &quot;Hund skall hållas kopplad på offentlig  plats.&quot; is in which language?</text>
+        <original>Hund skall hållas kopplad på offentlig  plats.</original>
+        <translation>‘A dog shall be kept on a leash in public places (lit: Dog shall be kept leashed on public place)’</translation>
       </questionSentence>
       <questionAnswers id="5">
-        <right>Fore</right>
-        <wrong1>Tobelo</wrong1>
-        <wrong2>Stöde (Md)</wrong2>
-        <wrong3>Nuckö (Es)</wrong3>
+        <right>Swedish</right>
+        <wrong1>Middle English (13th century)</wrong1>
+        <wrong2>Ersmark (NVb)</wrong2>
+        <wrong3>Munsala (NOb)</wrong3>
       </questionAnswers>
       <countryList id="6">
-        <xmlquestion.XMLCountry id="7">
-          <name>Papua_New_Guinea</name>
-          <lattitude>9.0</lattitude>
-          <longitude>147.0</longitude>
-        </xmlquestion.XMLCountry>
-        <xmlquestion.XMLCountry id="8">
-          <name>Eastern_Highlands_Province</name>
-          <lattitude>6.0</lattitude>
-          <longitude>145.0</longitude>
-        </xmlquestion.XMLCountry>
-        <xmlquestion.XMLCountry id="9">
-          <name>Goroka_District</name>
-          <lattitude>-6.08232</lattitude>
-          <longitude>145.39</longitude>
-        </xmlquestion.XMLCountry>
+        <country id="7">
+          <name>Finland</name>
+          <lattitude>60.0</lattitude>
+          <longitude>24.0</longitude>
+        </country>
+        <country id="8">
+          <name>Sweden</name>
+          <lattitude>59.0</lattitude>
+          <longitude>18.0</longitude>
+        </country>
       </countryList>
     </xmlquestion>
-    <xmlquestion id="10">
-      <questionSentence id="11">
-        <text>The sentence &quot;nambanyá mená&quot; is in which language?</text>
-        <original>nambanyá mená</original>
-        <translation>‘my pig’</translation>
+    <xmlquestion id="9">
+      <questionSentence id="10">
+        <text>The sentence &quot;Ururu=gha lava kova zuba=na&quot; is in which language?</text>
+        <original>Ururu=gha lava kova zuba=na</original>
+        <translation>‘[Talking about eggs of a megapode] Her child (i.e. egg) has a nice smell (when cooked).’, lit. ‘Fragrance having (is) her child.’</translation>
       </questionSentence>
-      <questionAnswers id="12">
-        <right>Enga</right>
-        <wrong1>Bokmål Norwegian</wrong1>
-        <wrong2>German</wrong2>
-        <wrong3>Älvdalen (Os) (18th century)</wrong3>
+      <questionAnswers id="11">
+        <right>Savosavo</right>
+        <wrong1>Nandi</wrong1>
+        <wrong2>Inanwatan</wrong2>
+        <wrong3>Swedish (1733)</wrong3>
       </questionAnswers>
-      <countryList id="13">
-        <xmlquestion.XMLCountry id="14">
-          <name>Papua_New_Guinea</name>
+      <countryList id="12">
+        <country id="13">
+          <name>Solomon Islands</name>
           <lattitude>9.0</lattitude>
-          <longitude>147.0</longitude>
-        </xmlquestion.XMLCountry>
-        <xmlquestion.XMLCountry id="15">
-          <name>Enga_Province</name>
-          <lattitude>5.0</lattitude>
-          <longitude>143.0</longitude>
-        </xmlquestion.XMLCountry>
+          <longitude>159.0</longitude>
+        </country>
       </countryList>
     </xmlquestion>
   </questionList>
