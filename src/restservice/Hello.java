@@ -34,6 +34,22 @@ public class Hello {
    
  }
 
+//This method is called if XML is requesting
+@GET
+@Produces(MediaType.TEXT_XML)
+@Path("questionAll")
+public String allQuestions()  {
+  
+    ClassLoader cl = this.getClass().getClassLoader();
+    InputStream is = cl.getResourceAsStream("../resourcesDB/questionAll.txt");
+    System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
+    String questionList = XMLUtilities.getStringFromInputStream(is);
+        
+    return questionList;
+  
+}
+ 
+ 
  @GET
  @Produces(MediaType.TEXT_XML)
  @Path("question2")
@@ -44,24 +60,21 @@ public class Hello {
                
      System.out.println(cl.getResource("../resourcesDB/languageSciencePress-database/dahl.xml").getPath());
      
-     String dbFilepath = this.getClass().getClassLoader().getResource("resourcesDB/languageSciencePress-database/dahl.xml").getFile();
+     String dbFilepath = this.getClass().getClassLoader().getResource("../resourcesDB/languageSciencePress-database/dahl.xml").getFile();
      File file = new File(dbFilepath);
      System.out.println("The path is: " + dbFilepath);
      System.out.println("Exists: " + file.exists());
      System.out.println("Is directory: " + file.isDirectory());
      
+     String questionList = XMLUtilities.getStringFromInputStream(is);
      
      
+     return questionList;
      
-     //String questionList = XMLUtilities.getStringFromInputStream(is);
-     
-     
-     
-     
-     XMLQuestionList qlist = XMLQuestionListGenerator.generateNewQuestionList(2);
+     /*XMLQuestionList qlist = XMLQuestionListGenerator.generateNewQuestionList(2);
      
      String result = XMLUtilities.questionListToXML(qlist);
-     return result;
+     return result;*/
    
  }
 
@@ -70,7 +83,7 @@ public class Hello {
  @Path("question5")
  public String makeQuestionSet5() throws Exception {
         
-     XMLQuestionList qlist = XMLQuestionListGenerator.generateNewQuestionList(5);
+     XMLQuestionList qlist = XMLQuestionListGenerator.generateNewQuestionList(2);
      
      String result = XMLUtilities.questionListToXML(qlist);
      return result;
