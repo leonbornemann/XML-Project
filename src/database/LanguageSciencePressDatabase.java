@@ -1,6 +1,7 @@
 package database;
 
 import java.io.File;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -15,6 +16,7 @@ import org.basex.core.cmd.XQuery;
 
 import data_representation.Example;
 import data_representation.LanguageContent;
+
 import java.nio.file.*;
 
 
@@ -23,24 +25,19 @@ public class LanguageSciencePressDatabase {
 	public static LanguageSciencePressDatabase INSTANCE = new LanguageSciencePressDatabase();
 	
 	private Context context;
-	private final String dbName = "DBExample";
-	private String dbFilepath = this.getClass().getClassLoader().getResource("../resourcesDB/languageSciencePress-database/").getPath();
-	
+	private final String dbName = "DBExample";	
 
 	public LanguageSciencePressDatabase(){
 		this.context = new Context();
 		
 		try {
 			new CreateDB(dbName).execute(context);
-			File file = new File(dbFilepath);
-			System.out.println("DBFilepath: " + dbFilepath);
-			//File file = new File("/WEB-INF/classes/questionSet.txt");
-			System.out.println(file.exists());
-			//System.out.println(new File("").getAbsolutePath());
-			
-			
-			
-			new Add("", dbFilepath).execute(context);
+			addToDatabase("../resourcesDB/languageSciencePress-database/cangemi.xml");
+			addToDatabase("../resourcesDB/languageSciencePress-database/dahl.xml");
+			addToDatabase("../resourcesDB/languageSciencePress-database/handschuh.xml");
+			addToDatabase("../resourcesDB/languageSciencePress-database/klamer.xml");
+			addToDatabase("../resourcesDB/languageSciencePress-database/schackow.xml");
+			addToDatabase("../resourcesDB/languageSciencePress-database/wilbur.xml");
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -48,6 +45,13 @@ public class LanguageSciencePressDatabase {
 		}
 	}
 	
+	private void addToDatabase(String resourcePath) throws BaseXException {
+	    InputStream stream = this.getClass().getClassLoader().getResourceAsStream(resourcePath);
+	    Add addCommand = new Add("");
+		addCommand.setInput(stream);
+		addCommand.execute(context);
+	}
+
 	// for testing
 	public static void main(String[] args) throws BaseXException {
 

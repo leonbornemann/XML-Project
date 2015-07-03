@@ -1,11 +1,13 @@
 package database;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.basex.core.BaseXException;
 import org.basex.core.Context;
+import org.basex.core.cmd.Add;
 import org.basex.core.cmd.CreateDB;
 import org.basex.core.cmd.XQuery;
 
@@ -26,12 +28,11 @@ public class DBPediaDatabase {
 	private DBPediaDatabase(){
 		context = new Context();
 		try {
-		    String path = this.getClass().getClassLoader().getResource("resourcesDB/dbpedia-database/extraInformation.xml").getPath();
-		    
-		    System.out.println(path);
-		    
-		    
+		    InputStream stream = this.getClass().getClassLoader().getResourceAsStream("../resourcesDB/dbpedia-database/extraInformation.xml");
 			new CreateDB("DBpediaDB").execute(context);
+			Add addCommand = new Add("");
+			addCommand.setInput(stream);
+			addCommand.execute(context);
 		} catch (BaseXException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
