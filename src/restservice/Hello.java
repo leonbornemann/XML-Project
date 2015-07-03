@@ -1,6 +1,5 @@
 package restservice;
 
-import java.io.File;
 import java.io.InputStream;
 //import java.nio.file.*;
 
@@ -30,6 +29,8 @@ public class Hello {
      System.out.println(cl.getResource("../resourcesDB/questionSet.txt").getPath());
      String questionList = XMLUtilities.getStringFromInputStream(is);
          
+     
+     
      return questionList;
    
  }
@@ -56,25 +57,14 @@ public String allQuestions()  {
  public String makeQuestionSet2() throws Exception {
           
      ClassLoader cl = this.getClass().getClassLoader();
-     InputStream is = cl.getResourceAsStream("../resourcesDB/languageSciencePress-database/dahl.xml");
-               
-     System.out.println(cl.getResource("../resourcesDB/languageSciencePress-database/dahl.xml").getPath());
-     
-     String dbFilepath = this.getClass().getClassLoader().getResource("../resourcesDB/languageSciencePress-database/dahl.xml").getFile();
-     File file = new File(dbFilepath);
-     System.out.println("The path is: " + dbFilepath);
-     System.out.println("Exists: " + file.exists());
-     System.out.println("Is directory: " + file.isDirectory());
-     
+     InputStream is = cl.getResourceAsStream("../resourcesDB/questionAll.txt");
+     System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
      String questionList = XMLUtilities.getStringFromInputStream(is);
+     XMLQuestionList xmlQL = XMLUtilities.convertFromXML(questionList);
+     XMLQuestionList finalQuestionList = XMLQuestionListGenerator.generateRandomQuestions(xmlQL, 2);
      
-     
-     return questionList;
-     
-     /*XMLQuestionList qlist = XMLQuestionListGenerator.generateNewQuestionList(2);
-     
-     String result = XMLUtilities.questionListToXML(qlist);
-     return result;*/
+     return XMLUtilities.questionListToXML(finalQuestionList);
+
    
  }
 
@@ -83,11 +73,14 @@ public String allQuestions()  {
  @Path("question5")
  public String makeQuestionSet5() throws Exception {
         
-     XMLQuestionList qlist = XMLQuestionListGenerator.generateNewQuestionList(2);
+     ClassLoader cl = this.getClass().getClassLoader();
+     InputStream is = cl.getResourceAsStream("../resourcesDB/questionAll.txt");
+     System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
+     String questionList = XMLUtilities.getStringFromInputStream(is);
+     XMLQuestionList xmlQL = XMLUtilities.convertFromXML(questionList);
+     XMLQuestionList finalQuestionList = XMLQuestionListGenerator.generateRandomQuestions(xmlQL, 5);
      
-     String result = XMLUtilities.questionListToXML(qlist);
-     return result;
-   
+     return XMLUtilities.questionListToXML(finalQuestionList);
  }
  
  @GET
@@ -95,14 +88,35 @@ public String allQuestions()  {
  @Path("question10")
  public String makeQuestionSet10() throws Exception {
         
-     XMLQuestionList qlist = XMLQuestionListGenerator.generateNewQuestionList(10);
+     ClassLoader cl = this.getClass().getClassLoader();
+     InputStream is = cl.getResourceAsStream("../resourcesDB/questionAll.txt");
+     System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
+     String questionList = XMLUtilities.getStringFromInputStream(is);
+     XMLQuestionList xmlQL = XMLUtilities.convertFromXML(questionList);
+     XMLQuestionList finalQuestionList = XMLQuestionListGenerator.generateRandomQuestions(xmlQL, 10);
      
-     String result = XMLUtilities.questionListToXML(qlist);
-     return result;
+     return XMLUtilities.questionListToXML(finalQuestionList);
    
  }
 
- 
+ @GET
+ @Produces(MediaType.TEXT_XML)
+ @Path("questionset")
+ public String makeQuestionSetParam(String nquestions) throws Exception {
+
+     //Retrieve parameter and store as integer
+     Integer i = Integer.parseInt(nquestions);
+
+     ClassLoader cl = this.getClass().getClassLoader();
+     InputStream is = cl.getResourceAsStream("../resourcesDB/questionAll.txt");
+     System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
+     String questionList = XMLUtilities.getStringFromInputStream(is);
+     XMLQuestionList xmlQL = XMLUtilities.convertFromXML(questionList);
+     XMLQuestionList finalQuestionList = XMLQuestionListGenerator.generateRandomQuestions(xmlQL, i.intValue());
+     
+     return XMLUtilities.questionListToXML(finalQuestionList);
+   
+ } 
   // This method is called if HTML is requesting
   @GET
   @Produces(MediaType.TEXT_XML)
