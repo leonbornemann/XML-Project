@@ -66,7 +66,7 @@ public class DBPediaDatabase {
 		assert(countryNames.size()==longitudes.size() && longitudes.size()==lattitudes.size());
 		List<Country> countries = new ArrayList<>(countryNames.size());
 		for(int i=0;i<countryNames.size();i++){
-			String countryName = countryNames.get(i).substring(countryNames.get(i).lastIndexOf('/')+1);
+			String countryName = countryNames.get(i).substring(countryNames.get(i).lastIndexOf('/')+1).replaceAll("_"," ");
 			Double longitude = Double.parseDouble(longitudes.get(i).substring(0, longitudes.get(i).indexOf('^')));
 			Double lattitude = Double.parseDouble(lattitudes.get(i).substring(0, lattitudes.get(i).indexOf('^')));
 			countries.add(new Country(countryName, longitude, lattitude));
