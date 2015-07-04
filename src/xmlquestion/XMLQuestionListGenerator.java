@@ -70,18 +70,42 @@ public class XMLQuestionListGenerator {
         ArrayList<XMLQuestion> qList = questionSet.questionList;
         ArrayList<XMLQuestion> retList = new ArrayList<XMLQuestion>();
         
-    
+        int[] selectedQuestions = new int[nQuestions];
+        
+        //Array init
+        for(int i = 0; i<nQuestions; i++)
+            selectedQuestions[i] = -1;
+        
         //Create as many random indexes as nQuestions
         Random rand = new Random();
         
         for (int i = 0; i<nQuestions; i++){
+            
             int randomNum = rand.nextInt(44);
+            
+            //Make sure the question was not already selected
+            while(alreadySelected(randomNum,selectedQuestions)){
+                randomNum = rand.nextInt(44);
+            }
+            
+            //Add selected question to question list
+            selectedQuestions[i] = randomNum;
+            
             XMLQuestion newQuestion = qList.get(randomNum);
             retList.add(newQuestion);                                    
         }
         
         
         return new XMLQuestionList(retList);
+    }
+    
+    private static boolean alreadySelected(int value, int[] questionArray){
+        
+        for (int i=0; i<questionArray.length; i++){
+            if (questionArray[i] == value)
+                return true;
+        }
+        return false;
     }
     
 }
