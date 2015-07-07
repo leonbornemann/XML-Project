@@ -61,6 +61,7 @@ public String allQuestions()  {
      System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
      String questionList = XMLUtilities.getStringFromInputStream(is);
      XMLQuestionList xmlQL = XMLUtilities.convertFromXML(questionList);
+     xmlQL = XMLQuestionListGenerator.cleanQuestionList(xmlQL);
      XMLQuestionList finalQuestionList = XMLQuestionListGenerator.generateRandomQuestions(xmlQL, 2);
      
      return XMLUtilities.questionListToXML(finalQuestionList);
@@ -78,6 +79,7 @@ public String allQuestions()  {
      System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
      String questionList = XMLUtilities.getStringFromInputStream(is);
      XMLQuestionList xmlQL = XMLUtilities.convertFromXML(questionList);
+     xmlQL = XMLQuestionListGenerator.cleanQuestionList(xmlQL);
      XMLQuestionList finalQuestionList = XMLQuestionListGenerator.generateRandomQuestions(xmlQL, 5);
      
      return XMLUtilities.questionListToXML(finalQuestionList);
@@ -93,6 +95,7 @@ public String allQuestions()  {
      System.out.println(cl.getResource("../resourcesDB/questionAll.txt").getPath());
      String questionList = XMLUtilities.getStringFromInputStream(is);
      XMLQuestionList xmlQL = XMLUtilities.convertFromXML(questionList);
+     xmlQL = XMLQuestionListGenerator.cleanQuestionList(xmlQL);
      XMLQuestionList finalQuestionList = XMLQuestionListGenerator.generateRandomQuestions(xmlQL, 10);
      
      return XMLUtilities.questionListToXML(finalQuestionList);

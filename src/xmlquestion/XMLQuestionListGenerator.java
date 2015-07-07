@@ -99,6 +99,23 @@ public class XMLQuestionListGenerator {
         return new XMLQuestionList(retList);
     }
     
+    
+    public static XMLQuestionList cleanQuestionList(XMLQuestionList ql){
+        
+        for(XMLQuestion q : ql.questionList) {
+            
+            Sentence questionSentence = q.getQuestionSentence();
+            String original = questionSentence.getOriginal();
+            String newOriginal = original.replace('?', ' ');
+            newOriginal = newOriginal.replace('=', ' ');
+            questionSentence.setOriginal(newOriginal);
+            q.setQuestionSentence(questionSentence);
+        }
+                        
+        return ql;
+        
+    }
+    
     private static boolean alreadySelected(int value, int[] questionArray){
         
         for (int i=0; i<questionArray.length; i++){
